@@ -224,23 +224,53 @@ This paper  is organized as follows;
  
   
 
- The standard dark matter rotation curve formula for rotationally supported galaxies, in the plane of the galactic disk,  is 
+ The   dark matter rotation curve formula   is of the form
 
  \begin{equation}
-v(r)^2_{obs}  =  v(r)^2_{lum}  +  v(r)^2_{dm}   
+v(r)^2_{obs}  =  v(r)^2_{lum}  +  v(r)^2_{dm},   
 \label{eq:zonte1}
 \end{equation} 
 
-  where all velocities are assumed to be circular orbits about the rotation axis of the galaxy at  $r=0$. Terms in  $v_{obs}$ come  from observations of Doppler shifted spectra (Eq.~\ref{eq:modelLumA}), $v_{lum}$ from observations of total light  (photometry) interpreted by Population Synthesis Models as mass and hence orbital velocities (Eq.~\ref{zoochance1}),  and $v_{dm}$ represents  the missing   mass component by the following logic.
+  where all velocities are assumed to be circular orbits about the rotation axis of the galaxy at  $r=0$, in the plane of the galactic disk. 
+  
+  Terms in  $v_{obs}$ are velocity parameters   from a Lorentz transformation 
+   
+
+ \begin{equation}
+ \frac{v_{obs} }{c}=
+\frac{  \left( \frac{\omega'(r)}{\omega_o}\right)^2 -  \left( \frac{\omega_o}{\omega'(r)} \right)^2 }{  \left( \frac{\omega'(r)}{\omega_o}\right)^2  +  \left( \frac{\omega_o}{\omega'(r)}\right)^2 },
+\label{eq:modelLumA}
+\end{equation} 
+
+  
+  of observations of Doppler shifted spectra $\omega'$. 
   
   
- Terms in  Eq.~\ref{eq:zonte1} are added in quadrature to reflect a   mass sum
   
+  Terms in  $v_{lum}$ come from observations of total light  (photometry) interpreted by Population Synthesis Models as mass,   hence orbital velocities  
+  
+   \begin{equation}
+v(r)_{lum}^2 = \gamma_b v(r)_{bulge}^2 +  \gamma_d v(r)_{disk}^2 + v(r)_{gas}^2,   
+\label{eq:zonte3}
+\end{equation} 
+  
+ where the $\gamma_i$ are the mass-to-light ratios for the stellar bulge and disk respectively. Gas measurements do not require the assumption of a mass-to-light ratio.  
+  
+ Thus,    the dark matter contribution $v^2_{dm}$ to the rotation curve Eq.~\ref{eq:zonte1} is the algebraic difference of the   terms  $v^2_{obs}-v^2_{lum}$. 
+ 
+ 
+ 
+  Terms in  Eq.~\ref{eq:zonte1} and Eq.~\ref{eq:zonte3} are added in quadrature to reflect a   sum of gradients in the potential at a given radius, 
+ for a central gravitational    force law   
+
 \begin{equation}
-    M(r)_{total}   = M(r)_{lum}   + M(r)_{dm}  ,  
+ \frac{\partial \Phi(r)_{lum}}{\partial r}    =\frac{v(r)_{lum}^2}{r},  
+    \label{zoochance1}
 \end{equation}
 
-for a  Newtonian gravitational potential 
+  
+   
+and a  Newtonian gravitational potential 
 
 \begin{equation}
       \Phi(r)  = -G \int d^3r'  \frac{ \rho(r') }{r-r'} ,
@@ -250,134 +280,97 @@ for a  Newtonian gravitational potential
 which solves Poisson's equation
 
 \begin{equation}
-\nabla^2 \Phi(r)_{lum}  = 4\pi G \rho(r),   
+\nabla^2 \Phi(r)_{lum}  = 4\pi G \rho(r).   
     \label{whatsgood}
 \end{equation}
 
-for $G$ Newton's universal gravitation constant, and 
+ Where $G$ is Newton's   gravitation constant, and 
 $\rho(r')$  the mass density. 
-The gravitational  central force law   
-
-\begin{equation}
- \frac{\partial \Phi(r)_{lum}}{\partial r}    =\frac{v(r)_{lum}^2}{r},   
-    \label{zoochance1}
-\end{equation}
-
-  relates centripetal acceleration $v^2/r$ to the gradient of the potential.   In this way, the  quadratic velocity terms in   Eq.~\ref{eq:zonte1} represent enclosed masses as a function of radius in the disk, and the 
- difference $(M_{dyn}-M_{lum})$  is 
-  the source   for the dark matter halo  
- $v(r)^2_{dm}$.  
+ In this way, the  quadratic sums in  Eq.~\ref{eq:zonte1} and Eq.~\ref{eq:zonte3} represent a sum of gradients of the potential.    In what follows, all   terms  can be assumed to  be functions of radius except the model's free parameter $\alpha$,  which is single valued for each galaxy fitted. 
 
 
 
 \subsection{New Rotation Curve Fitting Model}
 
-
+ 
 
  
- To construct a new  rotation curve fitting formula (RCFM), we   replace dark matter  in  Eq.~\ref{eq:zonte1}, 
-  with   a product of a free parameter $\alpha$,  a curvature ratio, and two  Lorentz-type transformations,   
+
+ To test the   
+frame-dependence picture, 
+we  replace the gradient in the potential attributed to  a spherical dark matter halo    with a product of  Lorentz-type boosts between galaxy frames.   We make the   assumption that shifts in   spectra   due to relative velocity and relative acceleration  can be roughly  separated \cite{Jack,Cisn} as in Eq.~\ref{eq:zonteLCM}. The new rotation curve formula is
    
 
 \begin{equation}
-v_{rc}^2 =  v_{lum}^2+\alpha \kappa^2 v_{1} v_{2} , 
+v_{rc}^2 =  v_{lum}^2+\alpha \kappa^2 v_{1} v_{2},  
 \label{eq:zonteLCM}
 \end{equation}  
 
-
-We  directly modify  the standard dark matter rotation curve formula as a heuristic way to test this concept, and    
-under the assumption that shifts in   spectra due to relative velocity and relative acceleration are separable, albeit perhaps not in exactly this way \cite{Jack,Cisn}.
- In what follows, all   terms  can be assumed to   functions of radius except the model's free parameter $\alpha$,  which is single valued for each galaxy fitted.
-
-  
- The term $\kappa$ 
-is a ratio of Newtonian gravitational potentials 
+where terms are, a free parameter $\alpha$,  a curvature ratio $\kappa$  defined as the ratio of Newtonian gravitational potentials 
 
  \begin{equation}
 \kappa=\frac{\Phi_{gal}}{\Phi_{mw}}, 
 \label{eq:kappa2}  
 \end{equation}  
 
- for $\Phi_{gal}$ representative of the reported estimates of the luminous mass in the galaxy being observed, and $\Phi_{mw}$ for the same in  the Milky Way.  Careful consideration of how to calculate and compare   gravitational potentials of   the galaxies relative to each other, since terms in $\Phi$ determine the metric term $g_{tt}$. Integration protocols are discussed in detail in Sec.~\ref{sec:gravDets}.
+ for $\Phi_{gal}$the   galaxy being observed, and $\Phi_{mw}$ for  the Milky Way, both from estimates of luminous, baryonic mass.  
+ Consideration is given to calculation of  the  gravitational potentials of   the galaxies in Sec.~\ref{sec:gravDets},   since terms in $\Phi$ determine the metric in $g_{tt}$. 
+
+
  
-
+    
+ Terms in $v_1$   are then 
  
- In what follows, we will consider the data reported as the rotation curve velocity $v_{obs}$, Eq.~\ref{eq:zonte1}, at the level of the   observations of  Doppler shifted spectra $\omega'$, 
-
- \begin{equation}
- \frac{v_{obs}(r) }{c}=
-\frac{  \left( \frac{\omega'(r)}{\omega_o}\right)^2 -  \left( \frac{\omega_o}{\omega'(r)} \right)^2 }{  \left( \frac{\omega'(r)}{\omega_o}\right)^2  +  \left( \frac{\omega_o}{\omega'(r)}\right)^2 }. 
-\label{eq:modelLumA}
-\end{equation} 
-
- This   relationship is from a Lorentz  boost in Minkowski spacetime,   applicable to 
-  relative   motion of inertial frames, and can be rewritten in hyperbolic form\cite{rindler2013essential} as
-
-
-     \begin{equation}
-         \frac{v}{c} = \tanh \zeta = \frac{e^\zeta - e^{-\zeta}}{e^\zeta + e^{-\zeta}} .   
-         \label{boost}
-     \end{equation} 
-
-On inspection, we will identify   the field-frame relationship with the   Lorentz exponential    $e^\zeta = \omega'(r) /\omega_o$, for
-$\zeta$ the   rapidity  angle.  This is    the  frame-field relationship we want to modify for use between slightly curved galaxy frames. 
-For  motivation of this    technique,  see discussion   in  Sec.~\ref{sec:gravDets}, which   is  based upon the conservation properties of the timelike Killing vector field,  evaluated  in   two distinct galaxy manifolds at the same $r$ (see Eq.~\ref{clocktime}).  
-
-
- Terms in $v_1$ and   $v_1$ will Lorentz map between galaxy frames one-to-one in radius, by identifying the Lorentz exponential term   between  galaxies  as
+   \begin{equation}
+       v_1 = \sinh \zeta. 
+   \end{equation}
+ 
+ for a rapidity angle $\xi$ defined by the    Lorentz exponential  term  $e^\xi$, 
+  
    
      \begin{equation}
-     e^{\xi}=  \frac{\omega_{mw}}{\omega_{gal}}  =\sqrt{\frac{g_{tt}|_{gal}}{g_{tt}|_{mw}}}
+     e^{\zeta}=  \frac{\omega_{mw}}{\omega_{gal}}  =\sqrt{\frac{g_{tt}|_{gal}}{g_{tt}|_{mw}}}
       \label{eq:gravRS}
     \end{equation}
     
-for  
- Schwarzschild   clock term $g_{tt}$
+This  represents our field-frame relationship between two galaxies, for  
+     clock terms $g_{tt}$ defined in the   weak field Schwarzschild limit, here in  Boyer-Lindquist coordinates \cite{Hartle}, 
  
   \begin{equation}
       g_{tt}= -( 1 - 2\Phi/ c^2).
       \label{clocktime}
   \end{equation} 
   
- This is the    weak field Schwarzschild   time metric term in  Boyer-Lindquist coordinates \cite{Hartle}, and $c$ is the constant vacuum light speed.
-  
-  
- All spiral galaxy manifolds,  in the weak field Schwarzschild limit, can be     assumed to be covered with a timelike   Killing vector field 
-   $\xi^t(r)$, where the norm of that field is related to the time metric coefficient  by  $\xi^b \xi_b =g_{tt}$ \cite{Wald}, for 
-   
- 
- 
-  
-   
-   \begin{equation}
-       \frac{\omega_1}{\omega_2}  =\sqrt{\frac{g_{tt}|_{P2}}{g_{tt}|_{P1}}} =\sqrt{\frac{|\xi^t\xi_{t}|_{P2}}{|\xi^t\xi_{t}|_{P1}}}. 
-      \label{eq:grav}
-    \end{equation}
-    
-   Extension of this formalism to relate two separate manifolds will be explored in the next section, and based on Wolfgang Rindler's acute observation  that    ``the center of each galaxy provides a basic local standard of nonacceleration ... so then can be treated like a local inertial frame relative to its own center.''\cite{rindler2013essential}.
+Terms in  $c$ represent  the constant vacuum light speed.    For  motivation of this    technique which is joining two separate manifolds by gravitational redshifts,  see discussion   in  Sec.~\ref{sec:gravDets}.  Classically the gravitational redshift formula in a relationship between two points on a single manifold. 
 
 
 
 
-    
- Terms in $v_1$   are then 
- 
-   \begin{equation}
-       v_1 = \sinh \xi. 
-   \end{equation}
- 
+The second Lorentz-type term is $v_2$,   transforms between the  curved 2-frame in Eq.~\ref{eq:gravRS} and  the flat 2-frame where we make observations
+
+\begin{equation}
+v_{2} =  \cosh \tau.
+\label{eq:hyperbolico}
+\end{equation}
  
 
-The second Lorentz-type map is $v_2$, which transforms between the  curved 2-frame in Eq.~\ref{eq:gravRS} and  the flat 2-frame where we make observations. That this second step is necessary is supported by the constancy of the speed of light.   
-The   $v_2$   Lorentz exponential term  is identified as a convolution of the curved and flat frames
+ That this second step is necessary is evidenced by the local constancy of the speed of light.  The   $v_2$   Lorentz exponential term   convolves the curved and flat frames
  
 \begin{equation}
-    e^{\eta}=   e^{(\xi+f)/2}.
+    e^{\tau}=   e^{(\zeta+\eta)/2}.
 \end{equation}
+ 
+The flat field-frames
+Lorentz exponential term is 
 
- (FIX INDICES ++++ MESSSY GREEK AND ROMAN)
-
-The flat field-frames where we make observations  are identified with the frequency shifts $\omega'(r)_{lum}$ expected  estimates of   Keplerian rotations, $v_{lum}$,   
+\begin{equation}
+    e^{\eta}=\frac{\omega_{l}}{\omega_o}= \sqrt{\frac{1+\beta}{1-\beta}},  
+    \label{eq:flat}
+\end{equation}  
+     
+for  the
+$\beta = v_{lum}/c$ the
+Keplerian rotation velocities  estimated from total light  $v_{lum}$, associated with  frequency shifts $\omega'(r)_{l}$         
 
  
  \begin{equation}
@@ -387,24 +380,29 @@ The flat field-frames where we make observations  are identified with the freque
 \end{equation} 
  
  
-  We assume Keplerian rotation curves are     the best estimate of flatness since dark matter is not required to  reproduce the rotation curve of our Solar System, so 
-the flat two-frame Lorentz exponential term is 
-
-\begin{equation}
-    e^{f}=\frac{\omega_{l}}{\omega_o}= \sqrt{\frac{1+\beta}{1-\beta}},  
-    \label{eq:flat}
-\end{equation}  
-     
-and then, the best  $v_2$  transformation is 
-
-\begin{equation}
-v_{2} =  \cosh \eta.
-\label{eq:hyperbolico}
-\end{equation}
+  We assume Keplerian rotation curves are     the best estimate of flatness since dark matter is not required to  reproduce the rotation curve of our Solar System.  
+ 
+ 
+ 
+  Lorentz exponential terms arise from identification of the field frame relationship
+  in  the  Lorentz transformation in Eq.~\ref{eq:modelLumA}
+  with its  hyperbolic form\cite{rindler2013essential} 
 
 
-Note, when viewed as    Rindler's accelerated coordinates\cite{MTW,Wald, rindler2013essential}, $v_1$ is  timelike   and $v_2$ is spacelike.  This approach    assumes that the tetrad formalism allows us to place field-frames at each point in a galaxy manifold, parametrized with small deviations from flatness due to gravity in $g_{tt}$, and  then to Lorentz boost between these manifolds to predict rotation curve observations. 
-  Fitting details and analysis are reported in Sec.~\ref{sec:analysis}. This concept has been previously explored in a series of papers \cite{Cisneros:2013vha,Cisneros:2014fea,Cisneros2015,Cisn2016}, though we here report an improved class of Lorentz-type transformations and a larger, more representative sample of galaxies. 
+     \begin{equation}
+         \frac{v}{c} = \tanh \zeta = \frac{e^\zeta - e^{-\zeta}}{e^\zeta + e^{-\zeta}} .   
+         \label{boost}
+     \end{equation} 
+
+
+  
+
+
+
+Note, when viewed as    Rindler's accelerated coordinates\cite{MTW,Wald, rindler2013essential}, $v_1$ is  timelike   and $v_2$ is spacelike. 
+
+
+
   
   
   
@@ -419,27 +417,35 @@ Note, when viewed as    Rindler's accelerated coordinates\cite{MTW,Wald, rindler
 %%%%%%%  
 %%%%%%
 %%%%%%%  
-\subsection{Integration protocols \label{sec:gravDets}}
+\subsection{Gravity Details \label{sec:gravDets}}
 
- In what follows, we    assume  luminosity   is a Lorentz scalar, therefore invariant under the assumption of a good distance estimate. This   means   we take reported   estimates of total light as faithful tracers of mass. 
+ In what follows, we    assume  luminosity   is a Lorentz scalar, therefore invariant under the assumption of a good distance estimate, hence a faithful tracer of baryonic mass. 
    In addition, we assume   
    Doppler shifted spectra is part of a Lorentz 4-vector, and so    must transform in a Lorentzian sense. 
-   We   also assume   the additional Tetrad-formalism assumption of a local Lorentz symmetry attached at each point in the manifold.  This will allow comparison of gravitational manifolds in $g_{tt}(r)$, given a careful calculation  of the gravitational potentials. 
+   We   also assume   the additional symmetry of the  Tetrad-formalism (CITE ED BERT)   of a local Lorentz symmetry attached at each point in the manifold 
+
+
+\begin{equation}
+    g^{\mu \nu} = \eta^{\alpha \beta} e^\mu_a  e^\nu_b
+\end{equation} 
+
+for $e^\mu_a$ here representative of an orthonormal basis vector. The basis vectors now carry the information regarding the physical spacetime, but the tetrad at each point is Lorentzian and so can endure 3 boosts and 3 rotations \cite{BertschingerClassTetrads}.  
    
    
- 
-Based on   Rindler's statement, relating two such Killing fields,  one-to-one in radius, will be accomplished  by synchronizing the galaxy centers. 
-
- 
-
-
-
-
- 
+   Terms in $v_1$ and   $v_2$ in Eq.~\ref{eq:zonteLCM}   Lorentz map between two galaxy frames one-to-one in radius. However, the standard gravitational redshift formula in Schwarzschild metric is a relationship between two points on a single manifold
+  
    
-  To compare galaxy centers, and  
+   \begin{equation}
+       \frac{\omega_1}{\omega_2}  =\sqrt{\frac{g_{tt}|_{P2}}{g_{tt}|_{P1}}} =\sqrt{\frac{|\xi^t\xi_{t}|_{P2}}{|\xi^t\xi_{t}|_{P1}}}. 
+      \label{eq:grav}
+    \end{equation} 
+     
+     for the $\xi$ the Killing vectors.  All spiral galaxy manifolds,  in the weak field Schwarzschild limit, can be     assumed to be covered with a timelike   Killing vector field 
+   $\xi^t(r)$, where the norm of the Killing field is related to the time metric coefficient  by  $\xi^b \xi_b =g_{tt}$ \cite{Wald}.  Extension of this formalism to relate two separate manifolds will be explored  based on Wolfgang Rindler's   observation  that    ``the center of each galaxy provides a basic local standard of nonacceleration ... so then can be treated like a local inertial frame relative to its own center.''\cite{rindler2013essential}.
+  
+ We propose that this  statement informs comparison of gravitational manifolds in $g_{tt}(r)$, given a careful calculation  of the gravitational potentials about the galaxy center. Based on   Rindler's statement, relating two such Killing fields,  one-to-one in radius, will be accomplished  by synchronizing the galaxy centers.  To compare galaxy centers, and  
  synchronize   clock fields   in $g_{tt}$, we   require aligning terms in  the Newtonian  gravitational potentials  $\Phi $. 
- Classically, $\Phi$ is integrated from the large $r$ limit   $r->\infty$,  to the inside small $r\approx 0$ limit. 
+ Classically, $\Phi$ is integrated from the large $r$ limit   $r \to \infty$,  to the inside small $r\approx 0$ limit. 
 This integration order is an implicit assumption of a flat embedding spacetime, where for   energy conservation all potentials go to zero at the large $r$ limit. 
 However,  as observations have shown \cite{Pomarede:2020pme,Hoffman:2017ako}, 
 the external environments of galaxies are   extremely   diverse,   depending on where and when  in the large-scale structure streamlines and Hubble flow the galaxy evolves. Some galaxies evolve in relative isolation, whereas others evolve in   huge clusters of galaxies. In addition, a priori,  we have no idea of the curvature of the universal embedding spacetime,  the background vacuum energy content of the universe (CITE), or the  global   value of the Hubble constant(CITE).  What we do know  is that all galaxy clocks read the same time at the event horizon. And further, since
@@ -456,27 +462,51 @@ integrate  from the small $r$ limit out  to the large $r$  extent of the data
    We   assume that Newtonian potentials integrated in this way parametrize Killing fields,     from the same standard of rest at the galaxy center, so   Lorentz-type transformations can be used to compare galaxy frames foliated in $g_{tt}(r)$. 
    
      Potentials calculated in this way still obey the central force law for test particles moving in circular orbits in Eq.~\ref{zoochance1} and Poisson's equation Eq.~\ref{whatsgood}.
+   
+  
 
-Since these potentials, and $g_{tt}$, will characterize the frames, we note that the tetrad formulation of General Relativity adds a local Lorentz symmetry
+   
+ 
+ 
+    
+  
 
 
-\begin{equation}
-    g^{\mu \nu} = \eta^{\alpha \beta} e^\mu_a  e^\nu_b
-\end{equation} 
-
-for $e^\mu_a$ here representative of an orthonormal basis vector. The basis vectors now carry the information regarding the physical spacetime, but the tetrad at each point is Lorentzian and so can endure 3 boosts and 3 rotations \cite{BertschingerClassTetrads}. 
+This approach    assumes that the tetrad formalism allows us to place field-frames at each point in a galaxy manifold, parametrized with small deviations from flatness due to gravity in $g_{tt}$, and  then to Lorentz boost between these manifolds to predict rotation curve observations. 
 
 
-   All terms in $\Phi(r)$ used in this paper  are    integrated from estimates of the baryonic mass, as reported in the      SPARC  library \cite{2016Lelli}.  
-   Assumptions in their reported luminous mass models  are included in Sec.~\ref{sec:analysis}. 
+  Fitting details and analysis are reported in Sec.~\ref{sec:analysis}. This concept has been previously explored in a series of papers \cite{Cisneros:2013vha,Cisneros:2014fea,Cisneros2015,Cisn2016}, though we here report an improved class of Lorentz-type transformations and a larger, more representative sample of galaxies. 
+   
+ 
+
+
+  
+ 
+
+
+ 
 %%%%%%
 %%%%%%%
 %%%%%%
 %%%%%%%
+
+%%%%%%
+%%%%%%
+%%%%%%% 
+%%%%%%
+%%%%%%
+%%%%%%%  
+%%%%%%
+%%%%%%%  
+%%%%%%
+%%%%%%%
+\section{Data \label{sec:data}}
+%  
 \subsection{Geometry and Mass-to-light ratios}
-
+ All terms in $\Phi(r)$ used in this paper  are    integrated from estimates of the baryonic mass, as reported in the      SPARC  library \cite{2016Lelli}.  
+   Assumptions in their reported luminous mass models  are included in Sec.~\ref{sec:analysis}
 Studies of the mass-to-light ratios in galaxies began with Schwarzschild's early investigations \cite{1954AJ.....59..273S} and have evolved into a set of best practices, but modeling of the 
-dark matter halo remains severely   underconstrained with correlated parameters including radius, slope, scale length, and halo core radius.     
+dark matter halo remains severely   under-constrained with correlated parameters including radius, slope, scale length, and halo core radius.     
 The technique presented here, whether fundamental or no,  has the advantage of replacing the dark matter term  with a product of terms based only on estimates of the luminous mass and   one free parameter.
 
 
@@ -491,37 +521,16 @@ This introduced error does not change  the line shape, and   does not introduce 
 \begin{figure}
     \centering
      \includegraphics[width=\linewidth]{Chatterjee_SphereDisk.png}
-    \caption{A $\alpha = r/R$ for $R$ the radial extent of the stars \cite{Chatterjee}}
+    \caption{ $\alpha = r/R$, for $R$ the radial extent of the stars \cite{Chatterjee}}
     \label{fig:my_geom}
 \end{figure}
 
   
-  
-%%%%%%
-%%%%%%
-%%%%%%% 
-%%%%%%
-%%%%%%
-%%%%%%%  
-%%%%%%
-%%%%%%%  
-%%%%%%
-%%%%%%%
-\section{Data \label{sec:data}}
-%  
-
+  \subsection{Thing}
 We will parametrize gravitational frames from estimates of luminous mass reported kinematically as  $v_{lum}$, Eq.~\ref{eq:zonte1}. These velocities  are constructed from photometric observations of surface brightnesses, interpreted   by a Population Synthesis Model (PSM)\cite{10.1093/mnras/sty3223} as     masses. 
 PSM rely upon a complex  suite of  assumptions regarding galaxy evolution, metallicities and initial mass functions  \cite{BelldYong,10.1093/mnras/sty3223}. PSM predict   mass-to-light ratios  $\gamma_i$
- which translate  luminosity into mass
- 
-  \begin{equation}
-v(r)_{lum}^2 = \gamma_b v(r)_{bulge}^2 +  \gamma_d v(r)_{disk}^2 + v(r)_{gas}^2.   
-\label{eq:zonte3}
-\end{equation} 
- 
- 
- 
-  Gas fractions are  not scaled because the observation techniques do not require a PSM to yield masses.  Baryonic mass contributions (disk, bulge and gas) are summed quadratically to represent a mass sum in the same way as in   Eq.~\ref{eq:zonte1}.
+ which translate  luminosity into mass as in Eq.~\ref{eq:zonte3}. 
+Gas fractions are  not scaled because the observation techniques do not require a PSM to yield masses.  Baryonic mass contributions (disk, bulge and gas) are summed quadratically to represent a mass sum in the same way as in   Eq.~\ref{eq:zonte1}.
 
 \subsection{SPARC dataset}
  
