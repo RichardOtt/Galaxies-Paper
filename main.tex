@@ -663,6 +663,55 @@ NGC2366\_rotmod        & 2.108042136                                            
  
 In RCFM fits reported here, the    bulge and disk mass-to-light ratios are allowed to vary freely from $1.0$ (See Eq.~\ref{eq:zonte3}), and the average resulting fit values are within stated criteria    of $\pm 20\%$ \cite{2016Lelli}. The gas fractions (HI scaled for Helium abundance) are fixed,  though addition of molecular gas could increase mass fractions in the inner kiloparsec of a galaxy   \cite{2004ApJ...609..652M}.
 
+\subsection{Fitting galaxies}
+\emph{We'll want a better title, and this is basically a first draft.  Also, this probably isn't the right order to do things in. Maybe we should first address which galaxies we analyze, then the actual fitting, then interpreting $\alpha?$}
+
+The equations outlined in Section \ref{sec:dos} contain three free parameters that must be determined for each galaxy: the model free parameter $\alpha$ and the mass-to-light ratios for the stellar bulge and disk, $\gamma_b$ and $\gamma_d$ respectively. To compute these values, a fitting procedure is followed.
+
+Data for a Milky Way model is read in, giving $v_{lum,MW}(r)$ for a series of measurement radii in the Milky Way. The galactic potential is computed as per equation \ref{zoochance1} by numerically integrating
+
+\begin{equation}
+\Phi_{MW}(r) = \int_{inner}^{outer} dr \frac{v_{lum}^2(r)}{r}
+\end{equation}
+
+The data for other galaxies contains several pieces of information: the observed orbital velocities $v_{obs}(r)$, the uncertainty on that measurement $v_{err}(r)$, and the components of the luminous mass interpreted as orbital velocities,  $v_{bulge}$, $v_{disk}$, and $v_{gas}$. 
+
+For the fitting process, $v_{lum,gal}(r)$ is computed as per equation \ref{eq:zonte3}, based on given values of $\gamma_b$ and $\gamma_d$ (these are varied in the fit). The $\Phi_{gal}(r)$ associated with that galaxy is computed as above.
+
+These two $\Phi$s are used to compute the components of the model. However, these components must be computed using matching values of $r$. To match radii, the $\Phi_{MW}(r)$ is interpolated and $\Phi_{MW}(r_{gal}$ is computed at the radii where there are observations in the target galaxy. Any point with a radius larger than the largest radius in the Milky Way model is discarded.
+
+The terms in equation \ref{eq:zonteLCM} are calculated as follows, to create $v_{rc}$ that can be compared with $v_{obs}$. 
+
+$\kappa(r)$ is simply computed as in (REF) by diving the two potentials at each radius.
+
+To calculate $v_1$ and $v_2$, first the terms $e^\zeta$ and $e^\eta$ are needed, which we rename for convenience. These are as defined in equations (REF) and (REF)
+
+\begin{equation}
+    \psi_{curve}(r) = e^\zeta = \sqrt{\frac{1 - 2\Phi_{gal}(r)}{1 - 2\Phi_{MW}(r}}
+\end{equation}
+
+\begin{equation}
+    \psi_{flat}(r) = e^\eta = \sqrt{\frac{1 + \beta_{gal}(r)}{1 - \beta_{gal}(r)}}
+\end{equation}
+
+Where
+
+\begin{equation}
+    \beta_{gal}(r) = \frac{v_{lum,gal}(r)}{c}
+\end{equation}
+
+Then the $v_1$ and $v_2$ terms are the respective hyperbolic functions.
+
+\begin{equation}
+    v_1(r) = \sinh(\eta) = \frac{\psi_{curve}^2(r) - 1}{2 \psi_{curve}(r)}
+\end{equation}
+
+\begin{equation}
+    v_2(r) = \cosh((\zeta + \eta)/2) = \frac{\psi_{curve}(r) \psi_{flat}(r) + 1}{
+    2\sqrt{\psi_{curve}(r) \psi_{flat}(r)}}
+\end{equation}
+
+These are assembled as in equation \ref{eq:zonteLCM}, along with $\alpha$ of a given value, to get a predicted $v_{rc}$. The $\chi^2$ of this $v_{rc}$ vs $v_{obs}$ is minimized by varying the three free parameters using the {\tt scipy.optimize.curve\_fit} utility in Python.
 
 \subsection{NGC 3198 and other galaxies(UNDER CONSTRUCTION)}
 \cite{1985ApJAlbada} studies this galaxy, which MOND has troubles with. This galaxy has   a thin exponential disk (de Vaucouleurs 1959),
