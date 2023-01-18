@@ -504,10 +504,46 @@ PSM rely upon a complex  suite of  assumptions regarding galaxy evolution, metal
 %%%%%%%
 \subsection{Milky Way}
 %''Mapping the Milky Way is one of the key science drivers for LSST.''~Mario Juric ,  UW
-The rotation curve fitting model presented here requires a static choice for the baryon distribution of the   Milky Way (MW).   Mass-modeling of the MW is an under-constrained problem, due to     observing from       within  the system  \cite{1991ARA&A..29..409F}.
- Outside of our position at 8 kpc in the disk of the MW, the data is very 
- noisy, see  Fig.~\ref{fig:mwSofue}. This is the central way in which this model can be falsified, if dark matter is found to be required to reproduce the rotation curve of the MIlky Way from independent tracers Mario Juric, etal. 
+
+The rotation curve fitting model presented here requires a static choice for the baryon distribution of the   Milky Way (MW).   Mass-modeling of the MW is an under-constrained problem, due to     observing from       within  the disk  \cite{1991ARA&A..29..409F}.
+ Outside of our position at 8 kpc, the data is very 
+ noisy, see  Fig.~\ref{fig:mwSofue}.
+ Since we assume   the dark matter problem in this context is due to the imprint of our Milky Way on the Doppler shifted spectra we receive from external galaxies, the RCFM    is   falsifiable  if dark matter is found to be necessary to explain the rotation curve of the Milky Way at distances larger than 8 kpc.  In what follows we use only estimates of the baryon distribution in the Milky Way. 
  
+ 
+ We test the RCFM fitting function to the SPARC sample using two different, static MW models; 
+   a hybrid model combined from  \citet{Xue}, 
+  \citet{Sofue}, \cite{sofue2009unified}, and 
+  a model from Stacy McGaugh \cite{McGaugh_2019}. 
+   % this paper goes out to 1000 kpc o algo, but is convolved with DM, so useless \cite{Sof11}, data file at http://www.ioa.s.u-tokyo.ac.jp/~sofue/htdocs/2012DarkHalo/Table_GrandRC.dat
+
+  Notable differences between these two baryon mass models include their derivations and   phenomenology.
+  The
+  Xue-Sofue MW is derived from  photometric (optical and infrared) observations   used to decouple the stellar bulge and disk components from the dark matter halo inferred by rotation curve velocities reported in  \citet{Xue} SDSS DR6 rotation curve data. 
+  The mass-to-luminosity (M/L) ratios   derived from near-infrared K band (2.2 µm) observations  for the bulge, within a sphere of the scale radius  $Rb = 0.5$ kpc,
+are $M/L_{(bulge in 0.5kpc)} \approx 7.1 M_\odot /L_\odot$. From $20$kpc to $60$ kpc the Xue-Sofue MW comes from Xue \cite{Xue},   created from consistent physical parameters for the bulge and disk as the Sofue MW, and  decoupled  luminous mass components done by using an NFW dark matter \cite{1996ApJ...462..563N} interpretation of rotation curve data.  
+In comparison, McGaugh decouples the luminous mass from rotation curve data ( CO data from \cite{2006ApJ...641..938L}),  iteratively by 
+fitting their function
+\begin{equation}
+    g_{obs}=\frac{g_{bar}}{1-e^{-(\sqrt{g_{bar}/g_\dagger})}}
+\end{equation}
+to the data, where terms in $g_i$ represent the gradient of the potential as in Eq.~\ref{zoochance1}, for 
+$ g_{bar}$ representative of the baryons,   $g_{obs}= v_{obs}/r$ from the flat-rotation curve data $v_{obs}$,  and $v_\dagger = 3700 km^2/ s^2 kpc$ is the MONDian-type acceleration scale. In this way, these models represent the two different current characterizations of the flat-rotation curve problem. 
+   
+Phenomenologically, the most important difference is that the 
+  Xue-Sofue Milky Way assumes a peak velocity   at around 94 parsecs, whereas in the McGaugh Milky Way the peak velocity occurs much farther out at around
+  6.55 Kpc. Interestingly, the peak velocity from the disk in the Xue-Sofue MW occurs at roughly 6kpc. 
+  Since the model presented here relies intrinsically on the assumed slope of the gradient in the Milky Way's potential, the difference between these two assumed Milky Way baryon models is critical. We will address goodness of fit results and the distribution of the residuals in a subsequent section. 
+  
+  
+  \begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{figures/MWXueSofueVMcGaugh.png}
+    \caption{Milky Way rotation curves
+   from Xue-Sofue and McGaugh \cite{sofue2009unified}, \cite{McGaugh_2019} [Marcus - please remake this so both lines are on one axis.ty.]}
+    \label{fig:mwSofuevMcGaugh}
+\end{figure}
+
  \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{Sofue_MWtoLGData}
@@ -526,7 +562,6 @@ The rotation curve fitting model presented here requires a static choice for the
 %In the inner Galaxy at R .10 kpc, the rotation velocity is predominantly determined by the bulge and disk contributions, and R < 0.5 kpc it is almost determined by the bulge alone.
 
 
-  We test the RCFM against two MW models;  a hybrid model from \citet{Xue} and \citet{Sofue}, a model from Stacy McGaugh  as summarized in Table ~\ref{tab:my_label}.
   
 %   \begin{table*}[h!]
 %      \centering
@@ -567,7 +602,7 @@ The rotation curve fitting model presented here requires a static choice for the
 In RCFM fits reported here, the    bulge and disk mass-to-light ratios are allowed to vary freely from an initial value of $1.0$ (See Eq.~\ref{eq:zonte3}). The resulting average mass-to-light    values are within stated criteria    of $\pm 20\%$ \cite{2016Lelli}. The gas fractions (HI scaled for Helium abundance) are fixed,  though addition of molecular gas could increase mass fractions in the inner kiloparsec of a galaxy   \cite{2004ApJ...609..652M}.
 
 \subsection{Fitting galaxies}
-\emph{We'll want a better title, and this is basically a first draft.  Also, this probably isn't the right order to do things in. Maybe we should first address which galaxies we analyze, then the actual fitting, then interpreting $\alpha?$}
+{\color{blue}\emph{COMMENT MEAGAN: We'll want a better title, and this is basically a first draft.  Also, this probably isn't the right order to do things in. Maybe we should first address which galaxies we analyze, then the actual fitting, then interpreting $\alpha?$} Comment Sofia: Im' not convinced we need to analyze individual galaxies, but it does happen in a lot of paper where they highlight individual galaxies...so let's see how it goes.}
 
 The equations outlined in Section \ref{sec:dos} contain three free parameters that must be determined for each galaxy: the model free parameter $\alpha$ and the mass-to-light ratios for the stellar bulge and disk, $\gamma_b$ and $\gamma_d$ respectively. To compute these values, a fitting procedure is followed.
 
@@ -621,9 +656,9 @@ These are assembled as in equation \ref{eq:zonteLCM}, along with $\alpha$ of a g
 \subsection{Evaluating Goodness-of-fits and Comparing Milky Way Models}
 The $\chi^{2}$ values for fits shown in Table II are remarkably low, providing confidence in the faithfulness of fits to data. The functional form of ${v_1}$ and ${v_2}$, the mapped velocities used in fits, had a major effect on $\chi^{2}$ of fits to the training set. The ${v_1}$ and ${v_2}$ functions chosen for use in our model resulted in the lowest $\chi^{2}$ and thus provided fits that described the data with the most accuracy according to that metric.
 
-The residuals of fits using different Milky Way models (McGaugh, XueSofue, Juric?) were compared to determine which resulted in the best fits. The different Milky Way models vary in their underlying assumptions about the fundamental structure and gravitational behavior of the Milky Way. For example, McGaugh [cite] assumes a galactic bar at the center and thus does not include velocity data of the inner 5 kpc of the Milky Way. Differences in assumptions in the Milky Way affected the fits produced by the model by changing the values of the Milky Way's gravitational potential and angular velocity used in calculations, as described in Equations 8 and 10. 
+The residuals of fits using different Milky Way models (McGaugh, XueSofue) were compared to determine which resulted in the best fits. The different Milky Way models vary in their underlying assumptions about the fundamental structure and gravitational behavior of the Milky Way. For example, McGaugh [cite] assumes a galactic bar at the center and thus does not include velocity data of the inner 5 kpc of the Milky Way. Differences in assumptions in the Milky Way affected the fits produced by the model by changing the values of the Milky Way's gravitational potential and angular velocity used in calculations, as described in Equations 8 and 10. 
 
-Histograms of residuals normalized by subtracting the mean and dividing by the standard deviation are shown in figure 5. In all cases, residuals of model fits to observed velocity data followed a narrow distribution centered at zero, albeit with heavy tails. The behavior of the residuals did not vary greatly between Milky Way models, suggesting that the fitting parameters in our model are flexible and can be used to provide accurate fits across different Milky Way model assumptions. A Gaussian fit on residuals from fits using the McGaugh Milky Way models gave a mean of 0.024 kpc, standard deviation of 2.786 kpc and a full-width half-maximum (FWHM) of 6.561 kpc, whereas a Guassian fit to the residuals from fits using the XueSofue Milky Way models gave a mean of -0.067 kpc, standard deviation of 3.578 kpc and a FWHM of  8.426 kpc. The small values associated with these quantities in both cases provide confidence that our fits matched data closely, even with outliers included. Notably, fits using the McGaugh Milky way model agreed slightly more with observations, resulting in a distribution of residuals with a smaller mean, standard deviation, and FWHM when fit to a Gaussian distribution.
+Histograms of residuals normalized by the error in velocity observations are shown in figure 5. In all cases, residuals of model fits to observed velocity data followed a narrow distribution centered at zero, albeit with heavy tails. The behavior of the residuals did not vary greatly between Milky Way models, suggesting that the fitting parameters in our model are flexible and can be used to provide accurate fits across different Milky Way model assumptions. A Gaussian fit on residuals from fits using the McGaugh Milky Way models gave a mean of 0.024 kpc, standard deviation of 2.786 kpc and a full-width half-maximum (FWHM) of 6.561 kpc, whereas a Guassian fit to the residuals from fits using the XueSofue Milky Way models gave a mean of -0.067 kpc, standard deviation of 3.578 kpc and a FWHM of  8.426 kpc. The small values associated with these quantities in both cases provide confidence that our fits matched data closely, even with outliers included. Notably, fits using the McGaugh Milky way model agreed slightly more with observations, resulting in a distribution of residuals with a smaller mean, standard deviation, and FWHM when fit to a Gaussian distribution.
 \begin{figure}[h]
      \centering
      \begin{subfigure}[b]{0.475\textwidth}
@@ -649,7 +684,7 @@ Histograms of residuals normalized by subtracting the mean and dividing by the s
         \caption{Normalized residuals from fits assuming either XueSofue of McGaugh Milky Way models, fitted to a Gaussian or exponential function. The exponential fit captures peak and tails in residuals better than the Gaussian fit.}
         \label{fig:residual graphs}
 \end{figure}
-Yet, the Gaussian fits did not quite capture the full peak and heavy tails in the residuals. This suggests that there may be systematic error in the data, possibly resulting in the fact that the error in the observed velocities is not Gaussian. (Analysis of underlying data error and if there are any trends in tails add here soon) To address this, the residuals were also fit to an exponential function shown in figure 5. The exponential function captured both the peak and the heavy-tailed behavior of the distributions more faithfully.
+Yet, the Gaussian fits did not quite capture the full peak and heavy tails in the residuals. This suggests that there may be non-Gaussian error in the observations of galaxy velocities. To address this, the residuals were also fit to an exponential function shown in figure 5. The exponential function captured both the peak and the heavy-tailed behavior of the distributions more faithfully.
 
 %\subsection{NGC 3198 and other galaxies(UNDER CONSTRUCTION)}\cite{1985ApJAlbada} studies this galaxy, which MOND has troubles with. This galaxy has   a thin exponential disk (de Vaucouleurs 1959),(Freeman 1970).  \cite{Toky} mentions that MOND fails to fit NGC 3109, which we fit exceedingly well ($\chi^2 = 0.32$).NGC 2841 is also a problem for MOND
 %%%%%%
