@@ -745,7 +745,7 @@ The $\chi^{2}$ values for fits shown in Table ~\ref{table:M2Light} are remarkabl
            RCFM   &  1.12 &	0.81\\
            \hline
         \end{tabular}
-        \caption{Average mass-to-light ratio results from fits to the SPARC sample of 175 galaxies. The $\gamma_$ are in units of  solar mass per solar luminosity $M_\odot/L_\odot$. }
+        \caption{Average mass-to-light ratio results from fits to the SPARC sample of 175 galaxies. The $\gamma_i$ are in units of  solar mass per solar luminosity $M_\odot/L_\odot$. }
         \label{tab:lobes}
     \end{table}
     
@@ -822,7 +822,7 @@ and has a reduced $\chi^2$ which is slightly better than the RAR fit to the same
  \begin{figure*}[ht] 
   \begin{subfigure}[b]{0.5\linewidth}
     \centering
-    \includegraphics[width=0.85\linewidth]{figures/NGC2841_rotmod_XueSofue.png} 
+    \includegraphics[width=0.95\linewidth]{figures/NGC2841_rotmod_XueSofue.png} 
     \caption{ Green line is the Keplerian velocity due to  luminous mass estimates, and data points with error bars are the rotation curve data.
     RCFM fit is the blue line,   at the 
     given Cepheid distance $14.1$ Mpc, with resulting mass-to-light ratios of $\gamma_d =0.87 $ (before scaling by 1/2 to account for geometry)  and $\gamma_b =1.11$, with a reduced  $\chi^2_\nu = 1.300$.  } 
@@ -831,7 +831,7 @@ and has a reduced $\chi^2$ which is slightly better than the RAR fit to the same
   \end{subfigure}%% 
   \begin{subfigure}[b]{0.5\linewidth}
     \centering
-    \includegraphics[width=0.85\linewidth]{figures/NGC2841_RarResults_Li2018}
+    \includegraphics[width=0.95\linewidth]{figures/NGC2841_RarResults_Li2018}
     \caption{RAR fit (from \citet{Li_2018})   ask permissions. Fit distance free parameter gives  distance at $15.5\pm 0.7$ Mpc, $\gamma_d =0.81 $ and $\gamma_b =	0.93 $, and reduced $\chi^2_\nu = 1.515$. purple line is the bulge, blue is the disk, and green  is the gas.} 
     \label{fig:2841Li2018Rar} 
     \vspace{4ex}
@@ -857,7 +857,7 @@ RCFM fit results for this galaxy give  $\gamma_d = 1.105$ (before scaling by  a 
  \begin{figure*}[ht] 
   \begin{subfigure}[b]{0.5\linewidth}
     \centering
-    \includegraphics[width=0.75\linewidth]{figures/IC2574_rotmod_XueSofue.png} 
+    \includegraphics[width=0.95\linewidth]{figures/IC2574_rotmod_XueSofue.png} 
     \caption{  RCFM fit, 
     Fitted at the reported   distance $3.78 ± 0.19 $ Mpc from tip of the red giant branch, $\gamma_d = 1.105 $ (not scaled down by a factor of 1/2 yet), and reduced $\chi^2_\nu = 2.098  $.Lines are as in Fig.~\ref{fig:ngc2841RCFMfit}
     } 
@@ -866,7 +866,7 @@ RCFM fit results for this galaxy give  $\gamma_d = 1.105$ (before scaling by  a 
   \end{subfigure}%% 
   \begin{subfigure}[b]{0.5\linewidth}
     \centering
-    \includegraphics[width=0.75\linewidth]{figures/Navarro2017Fig3.png} 
+    \includegraphics[width=0.95\linewidth]{figures/Navarro2017Fig3.png} 
     \caption{NFW dark matter fit, Figure from \cite{2017MNRAS.471.1841N}, ask permission. Parameter values not reported, but on inspection the dark matter model over predicts central rotation curve velocities.} 
     \label{fig:Nav17} 
     \vspace{4ex}
@@ -886,7 +886,10 @@ fits to   gas dominated IC 2574  }
 \subsubsection{NGC 3198}
 
   NGC 3198 is historically a problem  for MOND
-\cite{Gent}, as the preferred distance is 2$\sigma$ smaller than that reported by the most reliable distance indicator of Cepheid variable stars. RAR fits reproduce this distance preference, using a distance of $ D = 10.4 \pm 0.4$ Mpc  \cite{Li_2018}. With this fit,  RAR gives a reduced  $\chi^2 = 2.057$. $\gamma_d = 0.77 \pm 0.03$. The RCFM fit to  NGC 3198 at the Cepheid  distance  of $13.8$ Mpc, yields  a better reduced $\chi^2 = 1.676$, and mass-to-light ratios of  $\gamma_d = 0.878$(not scaled by 1/2 for geometric considerations).   See Fig.~\ref{fig:NGC2403}. 
+\cite{Gent}, as the preferred distance is 2$\sigma$ smaller than that reported by the most reliable distance indicator of Cepheid variable stars. RAR fits reproduce this distance preference, using a distance of
+$ D = 10.4 \pm 0.4$ Mpc  \cite{Li_2018}. With this fit,  RAR gives a reduced
+$\chi^2 = 2.057$, and $\gamma_d = 0.77 \pm 0.03$. The RCFM fit to  NGC 3198 at the Cepheid  distance  of 
+$13.8$ Mpc, yields  a better reduced $\chi^2 = 1.676$, and mass-to-light ratios of  $\gamma_d = 0.878$(not scaled by 1/2 for geometric considerations).   See Fig.~\ref{fig:NGC2403}. 
 
 
  
@@ -920,137 +923,84 @@ fits to   gas dominated IC 2574  }
   
    
 
-    
+    \subsubsection{Comparison NGC 7814 and NGC 891}
   
  
  
- 
+ \begin{figure*}[ht] 
+  \begin{subfigure}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{figures/NGC7814_rotmod_XueSofue.png} 
+    \caption{Bulge dominated NGC 7814} 
+    \label{fig25:f} 
+    \vspace{4ex}
+  \end{subfigure}%% 
+    \begin{subfigure}[c]{0.5\linewidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{figures/NGC0891_rotmod_XueSofue.png}
+    \caption{Disk dominated NGC 891} 
+    \label{fig25:e} 
+  \end{subfigure}%%
+  \caption{Examples of range of spiral galaxy densities and RCFM rotation curve fits, points with error bars are the rotation curve data, Combined baryonic models are represented by the green lines, and the RCFM fit is the blue line. (MARCUS PAZ : NOTE: remove orange lines, fit through data distracts from our fit)  }
+  \label{fig25} 
+\end{figure*}
 
 
 \subsection{Free parameter correlation }
 
-To test a guess at a functional interpretation of the model's free-parameter, we select a
-  subset of galaxies in Table~\ref{tab:Tset}.
-  The  subset is selected based on
-   galaxies that have highly accurate distances:   tip of the red giant branch, and Cepheids,  with errors in distance on the order of $5\% - 10\%$ \cite{2016Lelli}. {\color{blue}
-   (CHECK YO: did we include from supernova)}. Of these, we   exclude galaxies  which have an inclination greater than $85^o$ as impossible to constrain a proper surface brightness profile, and those at inclinations less than $35^o$ as being impossible to accurately report line of sight Doppler shifts.  We also reject  three galaxies with significant non-circular motions and poor quality factors in the SPARC database.  
-  By this process, we select a subset of 43 galaxies. 
+We test a  physical interpretation  for the  model's free paramater $\alpha$,  by using a subset comprised of the most reliable galaxy data versus the quantity
   
+   \begin{equation}
+     \rho = L_{total}/R_{eff}, 
+ \end{equation}
+ 
+ for  $L_{total}$    the  total luminosity of the galaxy as measured  at $3.6 \mu m$,  assuming a solar
+absolute magnitude of 3.24 at $3.6 \mu m$ \cite{oh2008high}, and the effective radius $R_{eff}$ is    the length encompassing half of the total luminosity \cite{2016Lelli}. 
+
+ 
+ 
+The
+  subset of galaxies is selected  based on a few criteria as stated in \citet{2016Lelli}. 
+  \begin{enumerate}
+      \item most   accurate distances measurement methods:   tip of the red giant branch, and Cepheid variable stars,  with errors in distance on the order of $5\% - 10\%$. \\
+      \item  inclination angle on the sky, rejecting galaxies with an inclination  greater than $80^o$ as impossible to constrain a proper surface brightness profile, and those at inclinations less than $15^o$ as being impossible to accurately report line of sight Doppler shifts.
+      \item  \citet{2016Lelli}   report a quality factor for each galaxy in the SPARC database, assigning  $Q=3$ to galaxies not suited to dynamical studies due to     asymmetries,  noncircular motions, and/or offsets between stars and gas. Galaxies with Q = 3 are rejected from our subset.
+%not suited for detailed dynamical studies:
+  \end{enumerate}
+   
+   
+  By this process, we select a subset of 36 galaxies as reported in Table~\ref{tab:Tset}. 
+  The result of plotting this subset of $\alpha$ values versus $L_{total}/R_{eff}$ can be seen to be highly correlated in   Fig.~\ref{alpha2}, and is 
+ well fitted with the function 
+   
   
-  \begin{table*}[]
-      \centering
-      \begin{tabular}{|c|c|c|c|c|c|}
-      \hline \hline
-Galaxy Name & Hubble Type(1)& 	Distance (Mpc)&Mean Error on D (Mpc)& 	Distance Method (2)& 	Inc (deg)\\
-    \hline \hline\\
-CamB&   	10&    3.36&  	0.26&   2&  65\\
-D564-8& 	10& 	8.79& 	0.28& 	2& 	63\\
-D631-7& 	10& 	7.72& 	0.18& 	2& 	59\\
-DDO154& 	10& 	4.04& 	0.2& 	2& 	64\\
-DDO168& 	10& 	4.25& 	0.21& 	2& 	63\\
-ESO444-G084& 10& 	4.83& 	0.48& 	2& 	32\\
-IC2574& 	9& 	3.91& 	0.2&    	2& 	75\\
-NGC0024& 	5& 	7.3& 	0.36&   	2& 	64\\
-NGC0055& 	9& 	2.11& 	0.11&   	2& 	77\\
-NGC0247& 	7& 	3.7& 	0.19&   	2& 	74\\
-NGC0300& 	7& 	2.08& 	0.1&    	2& 	42\\
-NGC0891& 	3& 	9.91& 	0.5&    	2& 	90\\
-NGC1705& 	11& 	5.73& 	0.29& 	2& 	80\\
-NGC2366& 	10& 	3.27& 	0.16& 	2& 	68\\
-NGC2403& 	6& 	3.16& 	0.16&   	2& 	63\\
-NGC2683& 	3& 	9.81& 	0.49&   	2& 	80\\
-NGC2841& 	3& 	14.1& 	1.4&    	3& 	76\\
-NGC2915& 	11& 	4.06& 	0.2& 	2& 	56\\
-NGC2976**& 	5& 	3.58& 	0.18&   	2& 	61\\
-NGC3109& 	9& 	1.33& 	0.07&   	2& 	70\\
-NGC3198& 	5& 	13.8& 	1.4&    	3& 	73\\
-NGC3741& 	10& 	3.21& 	0.17& 	2& 	70\\
-NGC4068& 	10& 	4.37& 	0.22& 	2& 	44\\
-NGC4214& 	10& 	2.87& 	0.14& 	2& 	15\\
-NGC5055& 	4& 	9.9& 	0.3&    	2& 	55\\
-NGC5907& 	5& 	17.3& 	0.9&    	2& 	88\\
-NGC6503& 	6& 	6.26& 	0.31&   	2& 	74\\
-NGC6789& 	11& 	3.52& 	0.18& 	2& 	43\\
-NGC6946& 	6& 	5.52& 	1.66&   	2& 	38\\
-NGC7331& 	3& 	14.7& 	1.5&    	3& 	75\\
-NGC7793& 	7& 	3.61& 	0.18&   	2& 	47\\
-NGC7814& 	2&  	14.4& 	0.66& 	2& 	90\\
-PGC51017**& 	11& 	13.6& 	1.4& 	2& 	66\\
-UGC01281& 	8&   	5.27& 	0.24& 	2& 	90\\
-UGC04305**& 	10& 	3.45& 	0.17& 	2& 	40\\
-UGC04483& 	10& 	3.34& 	0.31& 	2& 	58\\
-UGC07151& 	6& 	6.87& 	0.34&   	2& 	90\\
-UGC07232& 	10& 	2.83& 	0.17& 	2& 	59\\
-UGC07524& 	9& 	4.74& 	0.24& 	    2& 	46\\
-UGC07559& 	10& 	4.97& 	0.25& 	2& 	61\\
-UGC07577& 	10& 	2.59& 	0.13& 	2& 	63\\
-UGC07866& 	10& 	4.57& 	0.23& 	2& 	44\\
-UGC08286& 	6& 	6.5& 	0.21&   	2& 	90\\
-UGC08490& 	9& 	4.65& 	0.53&   	2& 	50\\
-UGC08837& 	10& 	7.21& 	0.36& 	2& 	80\\
-UGCA281& 	11& 	5.68& 	0.28& 	2& 	67\\
-UGCA442& 	9& 	4.35& 	0.22& 	    2& 	64\\
-UGCA444& 	10& 	0.98& 	0.05& 	2& 	78\\
-    \hline \hline           
-      \end{tabular}
-      \caption{Subset of galaxies to constrain RCFM free parameter.  Table from  \citet{2016Lelli}. 
-      (1) Hubble type:  from (CITE) de
-Vaucouleurs et al. (1991), (CITE) Schombert et al. (1992), or (CITE) NED3
-of: 0 = S0, 1 = Sa, 2 = Sab,
-3 = Sb, 4 = Sbc, 5 = Sc, 6 = Scd, 7 = Sd, 8 = Sdm,
-9 = Sm, 10 = Im, 11 = BCD.  (2) Distance method: : 1 = Hubble flow,
-2 = tip of the red giant branch, 3 = Cepheids, 4 = Ursa Major
-cluster of galaxies, 5 = supernovae. ** remove galaxies with Q>2 (non-circular)}
-   \label{tab:Tset}
-  \end{table*}
+\begin{equation}
+    \alpha = 57.6 (L_{total}/R_{eff})^{-1.1}
+\end{equation}
+
+at a confidence level of $81.5\%$.
   
+ \begin{figure*}[h]
+%\scalebox{0.5}%
+\includegraphics[width=\linewidth]{figures/alphavL_Reff2.png} 
+\caption{ MARCUS - remake graph please.  Free-parameter correlation for the most reliable subset of galaxy data, $\alpha$ versus    $L/R_{eff}$.   }
+\label{alpha2}
+\end{figure*}  
+ 
+
+ 
   %%NOTE:  Details on SPARC Mass models. 
   %%%%%%SPARC uses hybrid rotation curves on 56 galaxies, combining H-alpha  (inner) with HI (outer)
-  %%%Check if our "bad" gals are part of this. 
-  %%%%"Despite the high spatial resolution, Hα rotation curves are sometimes quite uncertain due to the patchy distribution and complex kinematics of Hα gas, especially for low-mass and LSB galaxies. We %use only H I data for the several objects:DDO 154, IC 2574, NGC 3109, NGC 5033, NGC 5055,NGC 6946, NGC 7331, and UGC 2259." (yo, I checked.  these gals are all good in our fits2022.)
  %Face-on gals in SPARC."We assign a quality flag (Q) to each rotation curve using the following scheme: Q = 1 for galaxies with high-quality H I data or hybrid Hα/H I rotation curves (99 objects); Q = 2 for
 %galaxies with minor asymmetries and/or H I data of lower
 %quality (64 objects); Q = 3 for galaxies with major asymmetries, strong noncircular motions, and/or offsets between H I
 %nd stellar distributions (12 objects). Galaxies with Q = 3 are%
 %not suited for detailed dynamical studies: we build mass models
 %for completeness but do not consider them in our analysis.
-%K BIEN_ Both UGC04305_rotmod and PGC51017_rotmod have Q=3. discard anyhow. but not: NGC2976_rotmod, it's a Q=2. Plus we have a few other galaxies in this subset with a Q=3,,,
-
-
-  We graph the  $\alpha$ values of the subset versus a proxy for the gradient in the gravitational potential
-  
-   \begin{equation}
-     \rho = L_{total}/R_{eff}.
- \end{equation}
- 
- The  estimates of the  total luminosities $L_{total}$ at $3.6 \mu m$,  assume a solar
-absolute magnitude of 3.24 at $3.6 \mu m$ (CITE Oh et al. 2008). The effective radius $R_{eff}$ is    the radius encompassing half of the total luminosity \citet{2016Lelli}.  We find $\alpha$  to be   strongly correlated to  this quantity, with 
-\begin{equation}
-    \alpha = 54.3 (L/R_e)^{-1.09}
-\end{equation}
-
-at a confidence level of $83.3\%$, see Fig.~\ref{alpha2}.
-  
- \begin{figure*}[h]
-%\scalebox{0.5}%
-\includegraphics[width=\linewidth]{alphavL_Reff.png} 
-\caption{  Free-parameter correlation, $\alpha$ v.  a proxy for the gradient in the potential $L/R_e$.   }
-\label{alpha2}
-\end{figure*}  
  
 
 
-We might guess that $\alpha$ is a ratio of the same quantity for  the Milky Way $\rho_{mw}$ with respect to the other   galaxy $\rho_{gal}$  
-
-\begin{equation}
-\alpha=\left(\frac{\rho_{mw}}{\rho_{gal}}\right)^{b}.
-\label{correl}
-\end{equation}
-
  
- 
-%\subsection{MOND  \& RAR Comparison}
-
 
 
 
@@ -1058,92 +1008,22 @@ We might guess that $\alpha$ is a ratio of the same quantity for  the Milky Way 
  \section{  Conclusions \label{sec:conclu}  }
  
 
-The   rotation curve fitting model (RCFM) presented here      replaces dark matter with a series of  Lorentz-type transformations between  the  galaxy frame being observed and that of the Milky Way. Interpreting the flat-rotation curve problem as due to frame dependency has the advantage of higher quality fits and a smaller free-parameter space than dark matter models. The RCFM can be seen as a natural relativistic extension of MOND, and in some particular galaxies which are difficult to fit with MOND at reported distances, the RCFM proves to be more responsive. We demonstrate our fitting success on the SPARC sample of   175  well studied galaxies\cite{2016Lelli}, previously fitted by MOND and RAR. 
-
-We   show   that RCFM fits to this sample   produces an average reduced $\chi^2$  which is roughly half that reported for MOND/RAR fits to the same.  The RCFM produces mass-to-light ratios within an acceptable range of values   and is based purely  on estimates of the luminous mass{\color{blue}(CHECK THIS AFTER RECOMPUTE THE $\chi^2$ CORRECTLY Y RUN TABLES AGAIN,asked meagan y rich 1.30.23. Yo:  look for within 20 percent como dijo Lelli)}.  The final benefit is that the RCFM does not modify current theories of gravity nor add more particles to the standard model. 
-
-The RCFM     does   introduce a new heuristic technique for Lorentz-type transformations between  weak gravitational frames,   and additionally does require a static choice for the Milky Way's  gravitational potential due to baryons. 
-In fact, the assumption of the Milky Way means that the  RCFM    is falsifiable if dark matter  is  found to be necessary in our galaxy, ie. if at large radii past the stars the Milky Way's rotation curve is flat and requires dark matter.
-  At the current date, the data of our Milky Way rotation curve is ambiguous outside of our position in the galactic disk at around 8kpc (cite Xue Sofue).     Recent and ongoing    surveys of millions of  stars in the Milky Way will differentiate these models   \cite{2022ApJS..259...35A,2010ApJ...716....1B,de_Blok_2010}.  As noted by M. Juric, ''Mapping the Milky Way is one of the key science drivers for LSST.''
-  
+The   rotation curve fitting model (RCFM) presented here      replaces dark matter with a series of  Lorentz-type transformations between  the  galaxy frame being observed and that of the Milky Way. 
+Interpreting the flat-rotation curve problem as due to a  frame dependency has the advantage of higher quality fits and a smaller free-parameter space than dark matter models. The RCFM can be seen as a   relativistic extension of MOND, and in some cases,  galaxies which are difficult to fit with MOND at reported distances are well fit at reported distance by  the RCFM formalism.
  
- Dark matter is involved in many other places in our standard model of cosmology today. We propose   that some of those dark matter problems could be approached in a similar way as this one, though would likely require more complicated geometric assumptions. However, there exist a class of dark matter problems which are embedded in the structure of our metric spacetime assumptions for current concordance cosmology. Those problems are strictly beyond the scope of the present work, and will require modification of the construction of the metric in the opinion of the authors. In example, the James Webb Space Telescope may have already falsified dark matter driven galaxy formation \cite{2022arXiv221014915H}.
-   
+  We demonstrate our fitting success on the SPARC sample of   175  well studied galaxies\cite{2016Lelli}, previously fitted by MOND and RAR. 
+We   show   that RCFM fits to this sample   produces an average reduced $\chi^2$  which is roughly half that reported for MOND/RAR fits to the same.  
+The RCFM produces mass-to-light ratios within an acceptable range of values   and is based purely  on estimates of the luminous mass{\color{blue}(CHECK THIS AFTER RECOMPUTE THE $\chi^2$ CORRECTLY Y RUN TABLES AGAIN,asked meagan y rich 1.30.23. Yo:  look for within 20 percent como dijo Lelli)}.  The final benefit of this approach  is that the RCFM does not modify current theories of gravity nor add more particles to the standard model. 
 
-%%%%%%
-%%%%%
-%%%
-%%
-%
-%%%%%%
-
-
- % \caption{Results   for SPARC Luminous mass profiles  [NOT UPDATED]\label{sumRESULTS}}
- % \begin{tabular}{@{}llccccccc@{}}
- % \hline
- %  Galaxy     	  &Ref.~&  \multicolumn{3}{c}{\underline{ Other Model Fit Results}}	& & \multicolumn{3}{c}{\underline{LCM Fit Results }}  \\
-%\hline
-%   	 	& & &  $M/L_{disk}$		& $\chi^2_r$	&&$M/L$&$r_e$&$\chi^2_r$ \\ 
-% \hline
-%F 563-1	& 2	%& 			
-%					&NFW	&--	 		&-- & 	&1.13 	&2.84 	&0.06 \\
-%M 31* 	& 12 	%&7.5
-%					&ISO	 	 &7.50		&0.36 & 	&5.88	 &4.80 	&0.04  \\
-%M 33		& 5	 %&	K 		
-%					& NFW 	&0.70		&2.46&  	 &1.98	 &1.46	& 0.17 \\
-%NGC 891*	& 11 	% &3.6$\,\umu$m 
-		%			&MaxLight &0.9 			&1.10  & 	 &--  	 &	&0.25 \\ 
-%NGC 925 	&3	%&3.6$\,\umu$m
- 			%		&ISO 	&0.18		 &2.40& 	&0.92	 &4.35	&0.11 \\
-%NGC 2403	 & 3	%& 3.6$\,\umu$m
-		%			& NFW	&0.41 	 	&4.56& 	&1.12	 	&2.18		& 0.88 \\
-%NGC 2841*  &6-3	% & 3.6$\,\umu$m
-%					&  James	&0.74 	 	&0.45 & 	&6.25	  &4.84	&0.11 \\
-%NGC 2903  &10	 %&B	   		
-%					&MOND   	&3.60 	 	&10.71& 	 &2.2	 	&2.81		&0.47\\
-% NGC 3198 & 3 	%&3.6$\,\umu$m
-%					 &NFW	&0.80	   	&5.40  &   	 &1.80 	 &5.10	&0.64   \\
-%NGC 3521  & 8-6	 %&3.6$\,\umu$m 
-%					&MOND	&0.71 	 	&0.97 & 	 &2.13  &3.23	&0.22 \\
-%NGC 3726	& 10	%&B 			
-%					&MOND	&1.00	 	&3.57& 	&1.06	 &2.70	&0.05 \\
-%NGC 3953	& 10	%&B 			
-%					&MOND	&2.7		 	&1.35& 	&1.79 	&2.60 	&0.35 \\
-%NGC 3992	& 10	%&B 			
-%					&MOND	&4.93	 	&0.50& 	&2.45 	 &4.77	&0.04 \\
-%NGC 4088	& 10	%&B 			
-%					&MOND	&1.16		 	&1.70& 	&5.58	 &2.70	&0.27 \\
-%NGC 4138	& 10	%&B 			
-%					&MOND	&3.5		 	&2.12& 	&3.67	 &1.46	&0.01 \\
-%NGC 5055*	 & 3	%&3.6$\,\umu$m 
-%					&  NFW	&0.79	 	&17.23&  	&5.87	 &3.29	&0.69 \\
-%NGC 5533*	 & 10 %&B 			
-%					&MOND	&0.6		  	&1.57 & 	&7.11 	  &3.23	&0.22  \\
-%NGC 5907*	& 10	%&B 			
-				%	&MOND	&1.6 		 	 &0.44& 	&2.04	 &3.45	%&0.09 \\
-%NGC 6946*	&  10	 %& B			
-%					&  MOND	& 0.5		 	&   3.03& 	&1.44 	 &0.76	&0.07  \\ 
-%NGC 6946*	&  3	 %& B			
-%					&  NFW	& 0.5		 	&   3.03& 	&1.44 	 &0.76	&0.07  \\ 
-%NGC 7331	&8	% & 3.6$\,\umu$m
-%					&James	&0.4 		 	& 0.45& 	&1.34	 &2.44	&0.09 \\
-%NGC 7793  &14	%&B			
-%					&ISO		&2.6		 	&1.08& 	&2.7	 &1.51	&0.11 \\
-%NGC 7814* &11 	% & 3.6$\,\umu$m
-%					&ISO   	& 0.68  	 	& 0.25& 	 &-- 	   &	&0.20 \\ 
-%UGC 128		&6	%&				
-	%				&James	&			&	&	&1.58	  &10.3	%&0.20\\
-%UGC 6973	& 10	%&B 			
-%					&MOND	&2.7		 	&23.5 & 	&--  	& 	&0.06 \\
-%UGC 7524	& 6	%&B 			
-%					&James	&--		 	&-- & 	&2.10 	&3.32 	&0.06 \\
-% 1.~\citet{Bege}, 2.~\citet{JNav}, 3.~\citet{Blok} , 4.~\citet{Maria}, 
-%5.~\citet{Cor03}, 6.~\citet{James},   7.~\citet{Batt},   8.~\citet{Gent},   9.~\citet{Bot},   10.~\citet{SanMcGa},
- % 11.~\citet{Frat},   12.~\citet{Car},   13.~\citet{giraud2000universal},   14.~\citet{Dicaire}, %15.~\cite{Klypin}. \\
-%    \end{minipage}
-%\end{table*} 
-
-
+The RCFM     does   introduce a new heuristic technique for Lorentz-type transformations between  weak gravitational frames.  Additionally,   the RCFM  requires a static choice for the Milky Way's  gravitational potential due to the baryon distribution, and assumes that is the only potential in the problem. 
+This   means that definitive knowledge of the rotation curve of the  Milky Way beyond our position at $\approx 8$kpc  can   falsify this model, if the Milky Way has a flat rotation curve data at the large $r$ limit. 
+  As of the current date, the rotation curve of the Milky Way  is ambiguous  past  $8$kpc  in 
+  the galactic disk.   
+Ongoing    surveys of millions of  stars in the Milky Way
+ \cite{2022ApJS..259...35A,2010ApJ...716....1B,de_Blok_2010} and the Large Synoptic Survey Telescope (LSST)  \citet{Ivezić_2019} can 
+  differentiate the RCFM from dark matter and MOND models in the flat-rotation curve problem. We do not address any of the other dark matter problems in cosmology in this paper. 
+  
+ %In example, the James Webb Space Telescope may have already falsified dark matter driven galaxy formation \cite{2022arXiv221014915H}.
    
 
   \section[]{Acknowledgments}
@@ -1153,6 +1033,7 @@ In fact, the assumption of the Milky Way means that the  RCFM    is falsifiable 
   
  
 % QUESTION FOR GROUP: how is our model predictive, more so than MOND, since we both do well on fitting galaxies. The Milky Way. We get a large enough sample of galaxies with certain distances and good photometry (SPARC) and run against a two MW. 
+%ANSWER FOR GROUP: Our is twice as good on average chisquare value across the whole sample, has same number of free parameters as MOND, (our our MW and alpha) (MOND's are acceleration scale and distance), and we about the same for the mass-to-light ratios as compared to the populations synthesis models. The key science difference is our reproduces rotation curves of very well studied galaxies with super reliable distance indicator (Cepheid variable stars) at the correct distance and MOND has to put them at distances that are up to 2sigma different. ALso, MOND requires modication of Einsteins' gravity, which is super well tested at least locally, and our doesnt'. So, for my money, we win. SNC.
 
 %%%%%%%
  
@@ -1161,25 +1042,25 @@ In fact, the assumption of the Milky Way means that the  RCFM    is falsifiable 
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.9\linewidth]{figures/CamB_rotmod_XueSofue.png}
+  \includegraphics[width=.95\linewidth]{figures/CamB_rotmod_XueSofue.png}
   \captionof{figure}{CamB : SPARC\cite{2016Lelli}}
   \label{fig:test1}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.9\linewidth]{figures/D564-8_rotmod_XueSofue.png}
+  \includegraphics[width=.95\linewidth]{figures/D564-8_rotmod_XueSofue.png}
   \captionof{figure}{D564-8 : SPARC\cite{2016Lelli}}
   \label{fig:test2}
 \end{minipage}
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.9\linewidth]{figures/D631-7_rotmod_XueSofue.png}
+  \includegraphics[width=.95\linewidth]{figures/D631-7_rotmod_XueSofue.png}
   \captionof{figure}{D631-7  SPARC\cite{2016Lelli}}
   \label{fig:test1}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.9\linewidth]{figures/DDO154_rotmod_XueSofue.png}
+  \includegraphics[width=.95\linewidth]{figures/DDO154_rotmod_XueSofue.png}
   \captionof{figure}{DD00154 : SPARC\cite{2016Lelli}}
   \label{fig:test1}
 \end{minipage}
@@ -1237,12 +1118,6 @@ In fact, the assumption of the Milky Way means that the  RCFM    is falsifiable 
 \end{minipage}
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.95\linewidth]{figures/NGC0891_rotmod_XueSofue.png}
-  \captionof{figure}{  NGC0891 SPARC\cite{2016Lelli}}
-  \label{fig:test1}
-\end{minipage}%
-\begin{minipage}{.5\textwidth}
-  \centering
   \includegraphics[width=.95\linewidth]{figures/NGC1705_rotmod_XueSofue.png}
   \captionof{figure}{ NGC1705  SPARC\cite{2016Lelli}}
   \label{fig:test1}
@@ -1286,15 +1161,73 @@ In fact, the assumption of the Milky Way means that the  RCFM    is falsifiable 
 %%%%%%
   
  
+
+% Subset of galaxies to constrain RCFM free parameter }  }    \\
+  \begin{table*}[]
+      \centering
+      \begin{tabular}{|c|c|c|c|c|c|}
+      \hline \hline
+\rowcolor[HTML]{CCCCCC} 
+\textbf{Galaxy Name} & Hubble Type(1)& 	Distance (Mpc)&Mean Error on D (Mpc)& 	Distance Method (2)& 	Inc (deg)(3)\\
+    \hline \hline\\
+CamB&   	10&    3.36&  	0.26&   2&  65\\
+D564-8& 	10& 	8.79& 	0.28& 	2& 	63\\
+D631-7& 	10& 	7.72& 	0.18& 	2& 	59\\
+DDO154& 	10& 	4.04& 	0.2& 	2& 	64\\
+DDO168& 	10& 	4.25& 	0.21& 	2& 	63\\
+ESO444-G084& 10& 	4.83& 	0.48& 	2& 	32\\
+IC2574& 	9& 	3.91& 	0.2&    	2& 	75\\
+NGC0024& 	5& 	7.3& 	0.36&   	2& 	64\\
+NGC0055& 	9& 	2.11& 	0.11&   	2& 	77\\
+NGC0247& 	7& 	3.7& 	0.19&   	2& 	74\\
+NGC0300& 	7& 	2.08& 	0.1&    	2& 	42\\
+NGC2403& 	6& 	3.16& 	0.16&   	2& 	63\\
+NGC2683& 	3& 	9.81& 	0.49&   	2& 	80\\
+NGC2841& 	3& 	14.1& 	1.4&    	3& 	76\\
+NGC2915& 	11& 	4.06& 	0.2& 	2& 	56\\
+NGC2976& 	5& 	3.58& 	0.18&   	2& 	61\\
+NGC3109& 	9& 	1.33& 	0.07&   	2& 	70\\
+NGC3198& 	5& 	13.8& 	1.4&    	3& 	73\\
+NGC3741& 	10& 	3.21& 	0.17& 	2& 	70\\
+NGC4068& 	10& 	4.37& 	0.22& 	2& 	44\\
+NGC4214& 	10& 	2.87& 	0.14& 	2& 	15\\
+NGC5055& 	4& 	9.9& 	0.3&    	2& 	55\\
+NGC6503& 	6& 	6.26& 	0.31&   	2& 	74\\
+NGC6789& 	11& 	3.52& 	0.18& 	2& 	43\\
+NGC6946& 	6& 	5.52& 	1.66&   	2& 	38\\
+NGC7331& 	3& 	14.7& 	1.5&    	3& 	75\\
+NGC7793& 	7& 	3.61& 	0.18&   	2& 	47\\\
+UGC04483& 	10& 	3.34& 	0.31& 	2& 	58\\
+UGC07232& 	10& 	2.83& 	0.17& 	2& 	59\\
+UGC07524& 	9& 	4.74& 	0.24& 	    2& 	46\\
+UGC07559& 	10& 	4.97& 	0.25& 	2& 	61\\
+UGC07577& 	10& 	2.59& 	0.13& 	2& 	63\\
+UGC07866& 	10& 	4.57& 	0.23& 	2& 	44\\
+UGC08490& 	9& 	4.65& 	0.53&   	2& 	50\\
+UGC08837& 	10& 	7.21& 	0.36& 	2& 	80\\
+UGCA442& 	9& 	4.35& 	0.22& 	    2& 	64\\
+UGCA444& 	10& 	0.98& 	0.05& 	2& 	78\\
+    \hline \hline           
+      \end{tabular}
+      \caption{Subset of galaxies to constrain RCFM free parameter.  
+      (1) Hubble type
+      from \citet{1991rc3..book.....D}, \citet{schombert1992catalog}, or  NED3
+of: 0 = S0, 1 = Sa, 2 = Sab,
+3 = Sb, 4 = Sbc, 5 = Sc, 6 = Scd, 7 = Sd, 8 = Sdm,
+9 = Sm, 10 = Im, 11 = BCD.  
+(2) Distance method:  
+2 = tip of the red giant branch, 3 = Cepheids.  (3) Inclination on the sky. \citet{2016Lelli}. } \label{tab:Tset}
+  \end{table*}
+ 
+%%%%%%%%%%%%%%
 \begingroup % Begin a TeX group in order to localize scope of next three instructions
 \setlength\extrarowheight{2pt}
 \small
 \setlength\LTcapwidth\textwidth
 \begin{longtable*}{|c|c|c|c|c|c|c|c| }
 
-%% Headers and footers
-%%%%%%%%%%%%%%
-\caption{Comparison of Fit Results: RAR ( \textbf{Pengfei Li} ) and RCFM  } \label{table:M2Light} \\
+ 
+\caption{\textbf{Comparison of Fit Results from RAR and RCFM  } } \label{table:M2Light} \\
 \hline
 \rowcolor[HTML]{CCCCCC} 
 \textbf{Galaxy name} 
@@ -1688,27 +1621,14 @@ UGCA444              & 7.08                      & 0.49 ± 0.12           & … 
 \begin{figure*}[ht] 
   \begin{subfigure}[b]{0.5\linewidth}
     \centering
-    \includegraphics[width=0.75\linewidth]{figures/NGC7814_rotmod_XueSofue.png} 
-    \caption{Bulge dominated NGC 7814} 
-    \label{fig7:a} 
-    \vspace{4ex}
-  \end{subfigure}%% 
-  \begin{subfigure}[b]{0.5\linewidth}
-    \centering
-    \includegraphics[width=0.75\linewidth]{figures/NGC6503_rotmod_XueSofue.png}
+    \includegraphics[width=0.95\linewidth]{figures/NGC6503_rotmod_XueSofue.png}
     \caption{Disk dominated NGC 6503} 
     \label{fig7:b} 
     \vspace{4ex}
   \end{subfigure} 
-    \begin{subfigure}[c]{0.5\linewidth}
-    \centering
-    \includegraphics[width=0.75\linewidth]{figures/NGC0891_rotmod_XueSofue.png}
-    \caption{Disk dominated NGC 891} 
-    \label{fig7:c} 
-  \end{subfigure}%%
   \begin{subfigure}[c]{0.5\linewidth}
     \centering
-    \includegraphics[width=0.75\linewidth]{figures/NGC3741_rotmod-Copy1_XueSofue.png} 
+    \includegraphics[width=0.95\linewidth]{figures/NGC3741_rotmod-Copy1_XueSofue.png} 
     \caption{Gas dominated NGC 3741} 
     \label{fig7:c} 
   \end{subfigure}%%
