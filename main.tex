@@ -72,7 +72,7 @@
 %}
  \author{ Meagan Crowley}
 \email{ }
-\affiliation{NREL, School of Mines}%
+\affiliation{Colorado School of Mines}%
  \author{ Amy Roberts}
 \email{ }
 \affiliation{CU Denver}%
@@ -85,7 +85,7 @@
 \author{Zac Holland}
 \author{Amanda Livingston}
 \author{Lily Castrellon}
-\author{Shanon Rubin}
+\author{Shanon Rubin(Check - I think he uses a J.)}
 \author{Aaron Ashley}
 \author{Dillon Battaglia}
 %\affiliation{UMass Boston% with \\
@@ -144,15 +144,17 @@ Photometry gives the  expected Keplerian orbital  velocities,  which descend  pa
  Doppler shifted   spectra gives
 flat-rotation curve velocities, which   remain ``flat''  far past the stars. 
 The divergence of these two velocities is 
- primary evidence for dark matter theory.
+ primary evidence for dark matter theories.
  
- Dark matter  is   hypothesized to be    massive particles which are electromagnetically neutral, and    have a very low interaction probability with baryonic matter. However, in the absence of  a    detection event  \cite{Cebrian:2022brv},   the paradoxes of dark matter theory remain    interesting.   
- S. McGaugh  notes one such paradox:  ``Why is the luminous tail wagging the dark matter dog,  if dark matter dominates dynamics ?'' \cite{1999McGaugh,McGaugh2016RAR}. This references the    fact   that knowledge  of  the   stellar   disk   completely  determines the spherical dark matter halo\cite{2004ApJ...609..652M}.
-Another  paradox is called the Universal Rotation Curve (URC)  \cite{salucci,Persic,1978Rubin,10.1111/j.1365-2966.2007.11696.x}, which is  a spectrum of   1,100  rotation curves normalized by scale-length (See Fig.~\ref{fig:URC}) .  It is a paradox because the galaxies larger than our own have rotation curves which inflect down from ``flat'', and those smaller than our Galaxy have curves which inflect up towards ``flat''. 
-In dark matter theory this implies
-large galaxies  require ``minimal dark-matter halos'', and small galaxies are ``dark matter dominated''.  
-This is because dark matter theories are built from standard  gravity but in standard gravity mass accretion rate are directly proportional to    mass\cite{10.1093/mnras/stt2403}. 
-Due to such paradoxes,  dark matter theories require fine-tuning and 4 free parameters per galaxy fitted (not including estimates of luminous mass).   Hence,   a reduction in the predictivity of the models   \cite{MCGAUGH2021220}. 
+ Dark matter  is   hypothesized to be    massive particles which are electromagnetically neutral, and    have a very low interaction probability with baryonic matter. However, in the absence of  a    detection event  \cite{Cebrian:2022brv},   the paradoxes of dark matter theories remain    interesting.   
+ S. McGaugh  notes one such paradox,   ``Why is the luminous tail wagging the dark matter dog,  if dark matter dominates dynamics ?'' \cite{1999McGaugh,McGaugh2016RAR}. This references the   curious fact   that knowledge  of  the   stellar   disk   completely  determines the spherical dark matter halo\cite{2004ApJ...609..652M}.
+
+ 
+In another  paradox called the Universal Rotation Curve (URC)  \cite{salucci,Persic,1978Rubin,10.1111/j.1365-2966.2007.11696.x},  the Milky Way's presumed rotation curve sits in the middle of 
+a spectrum of   1,100  rotation curves normalized by scale-length. 
+The URC spectrum of   rotation curves   inflect about the position of the  Milky Way's (MW) presumed rotation curve;  meaning  that galaxies larger than our MW have rotation curves which   inflect down towards ``flat'', and those smaller than our Galaxy  inflect up. 
+In dark matter theories this   curious phenomenology requires fine-tuning  \cite{MCGAUGH2021220},    because it means 
+that  small galaxies smaller  are proportionally more successful at accreting dark matter halos, which contradicts   standard  gravity \cite{10.1093/mnras/stt2403}.  % where mass accretion rate are directly proportional to  initial  mass
  
 
  
@@ -167,25 +169,27 @@ Due to such paradoxes,  dark matter theories require fine-tuning and 4 free para
 
 
 
-    We will instead interpret this problem   as a problem of relative frames, specifically the role of the Milky Way on our observations. We will do so by identifying the    luminosity measured from photometry as a  Lorentz scalar and Doppler shifted spectra as part of a Lorentz 4-vector, and then using    field-frames to map between slightly curved galaxy frames  in $g_{tt}$ Schwarzschild,
-    one-to-one in radii. To do so, we draw inspiration from the leading   alternative     to dark matter theory,  Modified Newtonian Dynamics (MOND) \cite{Milgrom}.   In MOND,        the   luminous mass is the only mass   but  Doppler shifted spectra is still  interpreted as   a physical   velocity.  MOND explains flat-rotation curve velocities by changing the  law of gravitational acceleration   on the enormous distance scales of galaxies  \cite{McGaugh_2014}. 
-MOND  is very successful  fitting most galaxies with only the luminous mass, and one,   essentially   constant free parameter representing the acceleration scale \cite{2016Lelli}. 
-While MOND removes the problem of dark matter from these systems efficiently and with fewer free parameters, it   remains a   fundamental  modification of  physics, which when extended  to the relativistic regime   gives rise to  new theories of gravity  \cite{PhysRevD.70.083509,doi:10.1142/S0217751X0703666X,Famaey2012}. The formalism in this paper can be seen as  a heuristic   extension of MOND's    idea of changing acceleration,  to the relativistic paradigm of relative galaxy curvatures. It can also be seen that the role of   MOND's  single, almost constant acceleration scale is replaced by the   role of  our Milky Way on  observations.  Previous consideration of the role of relative
-     galaxy curvature  in this problem were obviated 
-       by  Galilean subtraction of   gravitational red-shifts at the  large $r$  limit of the data \citep{MTW}. The rotation curve fitting model (RCFM)  presented here   is as  successful as   MOND or dark matter theories in fitting galaxy rotation curves, but does not modify classical gravity.   We demonstrate     the efficiency of this  approach by 
-       fitting   the SPARC \cite{2016Lelli} sample of 175 galaxy rotation curve data previously   fitted by the MOND, dark matter models, and an evolution of MOND called  the    RAR (Radial Acceleration Relation) \cite{McGaugh2016RAR,2016Lelli,McGaugh_2014,Li_2018}. 
-       This paper  is organized as follows;
-{\bf Section \ref{sec:dos}} constructs  the new rotation curve  fitting formalism, 
-{\bf Section \ref{sec:data}}   describes  the data  we use, 
- {\bf Section \ref{sec:analysis}}   discusses our results, 
- and  {\bf Section \ref{sec:conclu}}   discusses implications and future tests.   
-  
+    We will instead treat this problem at the level of the data,   by attributing excesses in Doppler shifted spectra as due to  relative galaxy frames.   Specifically the role of the Milky Way on our observations will subsume that of dark matter in the rotation curve formula.
+  The form of the   Lorentz Doppler shift formula currently being used for this problem is applicable to  the relative frame motion of flat, inertial  frames. 
+We will instead use a field-frame technique to  Lorentz boost between slightly curved gravitational frames, based on 
+ Rindler's statement that        ``the center of each galaxy provides a basic local standard of nonacceleration ... so then can be treated like a local inertial frame relative to its own center.''\cite{rindler2013essential}. Previous consideration of gravitational effects in the flat-rotation curve problem used Galilean differences between redshifts at the large $r$ limit of the observations \cite{MTW}.
+ 
 
- 
- 
- 
-  
+   
+ We draw parallels to the framing of the 
+ leading   alternative     to dark matter theory,  Modified Newtonian Dynamics (MOND) \cite{Milgrom}. 
+ In MOND    the   luminous mass is the only mass,  
+ but excesses in  Doppler shifted spectra are  interpreted as   a physical   velocities. 
+ MOND's explanation of the    flat-rotation curve velocities involves a changing scale for the   acceleration scale of gravity   on the enormous distance scales of galaxies  \cite{McGaugh_2014}. 
+MOND  is very successful  fitting most galaxies with only the luminous mass, and one   essentially   constant free parameter representing the changing acceleration scale \cite{2016Lelli}. 
+However,  MOND  remains a   fundamental  modification of  physics, and    when extended  into the relativistic regime  has gives rise to  new theories of gravity  \cite{PhysRevD.70.083509,doi:10.1142/S0217751X0703666X,Famaey2012}. 
+We instead consider MOND's changing acceleration scale  as representative of  the
+changing relative curvatures of galaxies. 
 
+The rotation curve fitting model (RCFM)  presented here   is as  successful as   MOND or dark matter theories in fitting galaxy rotation curves and producing reasonable mass-to-light ratios, but does not modify physics.   We demonstrate     the efficacy of this  approach by; {\bf Section \ref{sec:dos}} constructing  the new rotation curve  fitting formalism, {\bf Section \ref{sec:data}}   
+       fitting   the SPARC  database of 175  galaxy rotation curves with accurate photometry \cite{2016Lelli},  previously   fitted by the MOND  and the MONDian extension    RAR (Radial Acceleration Relation) \cite{McGaugh2016RAR,2016Lelli,McGaugh_2014,Li_2018},  
+      {\bf Section \ref{sec:analysis}}   discussing our results in comparison to MOND and dark matter fits, 
+ and  {\bf Section \ref{sec:conclu}}  concluding with a discussion of the observations which can falsify this model.  
  
    
  \begin{figure}[h!]
@@ -195,22 +199,6 @@ While MOND removes the problem of dark matter from these systems efficiently and
      \label{fig:URC}
 \end{figure}
  
- 
- 
-
- 
-
-
-      
-
-
-
- 
- 
-
-  
-    
-
 %%%%%%
 %%%%%%%%
 %%%%%%
@@ -224,7 +212,7 @@ While MOND removes the problem of dark matter from these systems efficiently and
  
   
 
- The   dark matter rotation curve formula   is of the form
+ The  standard dark matter rotation curve formula currently in use  is of the form
 
  \begin{equation}
 v(r)^2_{rot}  =  v(r)^2_{lum}  +  v(r)^2_{dm},   
@@ -233,14 +221,14 @@ v(r)^2_{rot}  =  v(r)^2_{lum}  +  v(r)^2_{dm},
 
   where terms in $v(r)_{lum}$ are the Keplerian velocities from estimates of   luminous mass,  $v(r)_{dm}$ are the velocities attributed to  dark matter, 
   and 
-  terms in $v(r)_{rot} $ are the  total flat-rotation velocity   prediction.  All velocities are assumed to be those of test particles in circular orbits, in the plane of the stellar disk,  about the rotation axis of the galaxy at  $r=0$. 
-
+  terms in $v(r)_{rot} $ are the model  prediction.  All velocities are assumed to be those of test particles in circular orbits, in the plane of the stellar disk,  about the rotation axis of the galaxy at  $r=0$. 
   
-  The dark matter prediction  $v(r)_{rot} $
-  is fitted to the flat-rotation curve velocity  
-  $v_{obs}(r)$, which    come from a flat spacetime
- Lorentz boost  of the  in terms of the received shifted spectra data  $\omega'(r)$,  
-   
+  The dark matter model  prediction  $v(r)_{rot} $
+  is fitted to the  rotation curve velocity  
+  $v_{obs}(r)$ from Doppler shifts.  
+ The   rotation curve velocities    $v_{obs}(r)$   come from interpreting Doppler shifted spectra data as relative frame motion $v$,    by a 
+ Lorentz boost  of some characteristic frequency $\omega_o$
+
 
  \begin{equation}
  \frac{v_{obs}(r) }{c}=
@@ -248,21 +236,20 @@ v(r)^2_{rot}  =  v(r)^2_{lum}  +  v(r)^2_{dm},
 \label{eq:modelLumA}
 \end{equation} 
 
-  as compared to the lab frequency      $\omega_o$.   Note,  the  vacuum light speed is $c$, and the frequencies in Eq.~\ref{eq:modelLumA}} are the temporal part of a Lorentz 4-vector $k_i = (k_o, k_i)$. This form of the Lorentz boost is derived from the assumption of a boost between two inertial frames. 
-  
-  
- 
-
-  
+into the shifted frequency $\omega'(r)$. 
+The  vacuum light speed is $c$: % and we note that frequencies  are the temporal part of a Lorentz 4-vector $k_i = (k_o, k_i)$, and 
+We note that this form of the Lorentz boost is appropriate for   a boost between two flat, inertial frames. 
   
   
  %%%%%%%%%%%%%%%%%
  %%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%
-  Keplerian velocities due to   luminous mass $v_{lum}$ (Eq.~\ref{eq:zonte1})
-   come from associating  baryonic  mass with observations of total light  (photometry)  through  population synthesis models (PSM).  
-  These mass distributions are    used to 
-  calculate the Newtonian gravitational potential  
+Terms in $v_{lum}$ in Eq.~\ref{eq:zonte1} are the 
+  Keplerian velocity predictions due to  estimates 
+  of luminous mass 
+     from photometric   data. The  baryonic  mass is estimated by    population synthesis models (PSM), which then allows calculation of the 
+   Newtonian gravitational potential  
+   
 \begin{equation}
       \Phi(r)  = -G \int d^3r'  \frac{ \rho(r') }{r-r'}.
       \label{eq:Newt}
@@ -274,9 +261,9 @@ which solves Poisson's equation
 \nabla^2 \Phi(r)_{lum}  = 4\pi G \rho(r'),     
     \label{whatsgood}
 \end{equation}
-
-   terms in  $G$   are  Newton's   gravitational constant, and 
-$\rho(r')$ is the mass density per unit volume. 
+for
+   terms in  $G$      Newton's   gravitational constant, and 
+$\rho(r')$  the mass density per unit volume. 
 The gradient of the potential    yields the circular orbital velocities $v_{lum}$ (Eq.~\ref{eq:zonte1}) as
 
 \begin{equation}
@@ -286,44 +273,44 @@ The gradient of the potential    yields the circular orbital velocities $v_{lum}
 
   
 
-The baryonic components of disk   galaxies include stellar bulge, stellar disk, and a gas halo
+The baryonic components of disk   galaxies include stellar bulge, stellar disk, and a gas halo   summed in quadrature to reflect the gradient in Eq.~\ref{zoochance1}, 
   
    \begin{equation}
 v(r)_{lum}^2 = \gamma_b v(r)_{bulge}^2 +  \gamma_d v(r)_{disk}^2 + v(r)_{gas}^2.  
 \label{eq:zonte3}
 \end{equation} 
   
-Terms in mass-to-light ratios $\gamma_b$ and $\gamma_d$ are   for the stellar bulge and for the stellar disk      respectively. 
-  Gas fractions $v_{gas}$ are calculated from surface density profiles of HI  with the formalism given in  \cite{1983MNRAS.203..735C}, and do not require  a mass-to-light ratio.  
+Terms in mass-to-light ratios $\gamma_b$ and $\gamma_d$ are  from PSM,  for the stellar bulge and for the stellar disk      respectively. 
+  Gas fractions $v_{gas}$ are calculated from different observational technique as given in  \cite{1983MNRAS.203..735C}, and do not require  mass-to-light ratios.  
   
  
 
 
 \subsection{New rotation curve fitting model (RCFM)}
 
-We approach the flat-rotation curve problem not as a missing mass problem, but as a gravitational frame-dependency  due to our Milky Way.  
-We directly replace 
-  the dark matter term $v(r)^2_{dm}/r$ in the rotation curve in Eq.\ref{eq:zonte1},  which represents  the gradient in the gravitational potential by Eq.~\ref{zoochance1},       with  Lorentz-type mappings between the extended gravitational frames of galaxies, one-to-one in radius.  Like MOND, we   assume baryonic mass is the only mass. However, different from MOND, we use the    identification of  luminosity   as a Lorentz scalar and Doppler shifted spectra as part of a 4-vector to decompose this problem at the level of the data. As a reminder, Lorentz scalars are agreed upon by both frames, under a reliable distance indicator  (Cepheid variable stars, Tip of the Red Giant Branch), and 4-vectors transform in a Lorentzian sense.  
-We   will also assume for convenience in this heuristic treatment   that the contributions to  Doppler shifted spectra from  relative frame  motion ($v_{lum}$) can be  separated from those from relative curvature roughly as in Eq.~\ref{eq:zonte1} \cite{Jack,Cisn}.  
-
-
- 
- 
-   
-   The   RCFM rotation curve prediction is then
-   
+We reinterpret the flat-rotation curve problem not as a missing mass problem, but as a gravitational frame-dependency  due to our Milky Way.  
+We   replace 
+  the dark matter contribution $v^2_{dm}/r$ in the rotation curve equation  Eq.\ref{eq:zonte1},  with a
+  relative frame transform term $\alpha \kappa^2 v_1 v_2$ so that the RCFM  prediction  $v(r)_{rc}$,  
 
 \begin{equation}
 v(r)_{rc}^2 =  v(r)_{lum}^2+\alpha \kappa^2 v(r)_{1} v(r)_{2},  
 \label{eq:zonteLCM}
 \end{equation}  
+ 
+    is fitted to $v_{obs}$.
+Terms in $v_{lum}$ remain   as in 
+  Eq.~\ref{eq:zonte3}, though identified as Lorentz scalars under a reliable distance estimate. Terms in the RCFM relative frame transform are the  model's free fitting parameter $(\alpha)$, a curvature ratio ($\kappa^2$),  and two Lorentz-type transformation $(v_1)$ and $(v_2)$. 
+  
 
-for $v(r)_{rc}$ the model's prediction which is fitted to $v_{obs}$, terms in $v_{lum}$ remain   as in 
-  Eq.~\ref{eq:zonte1}, and the   term   replacing  dark matter is  $\alpha \kappa^2 v(r)_{1} v(r)_{2}$. This term is a product of the model's free fitting parameter $\alpha$, a curvature ratios ($\kappa$),  and two Lorentz-type transformation $v_1$ and $v_2$. 
-  In what follows we will drop explicit representation of functional dependence on $r$, and so all   terms  can be assumed to  be functions of radius except the model's free parameter $\alpha$,  which is single valued for each galaxy fitted, and other constants like the lab-frame frequency $\omega_o$, Newton's constant $G$ and the speed of light $c$.  
+ 
+ 
+   
+ 
+  In what follows we   drop explicit representation of functional dependence on $r$ since all terms are taken one-to-one in radius between the galaxy being observed and the Milky Way. Which is to say,  all   terms  can be assumed to  be functions of radius evaluated at the same $r$  except the model's free parameter $\alpha$,  which is single valued for each galaxy fitted, and other constants like the lab-frame frequency $\omega_o$, Newton's constant $G$ and the speed of light $c$.  
   
   Terms in 
-$\kappa$  are   ratios of the baryonic gravitational potentials 
+$\kappa$  are  a ratio of the baryonic gravitational potentials 
 
  \begin{equation}
 \kappa=\frac{\Phi_{gal}}{\Phi_{mw}}, 
@@ -334,7 +321,7 @@ $\kappa$  are   ratios of the baryonic gravitational potentials
  
  
  To characterize    excesses in Doppler shifted spectra
-  as     part of  a Lorentz 4-vector, we have investigated the space of hyperbolic transformations  \cite{Cisneros:2013vha,Cisneros:2014fea,Cisneros2015,Cisn2016}, and found the best fit function for $v_1$ to be
+  as     part of  a Lorentz transformation of a photon 4-vector between two distinct galaxies, we   investigate the space of hyperbolic transformations  \cite{Cisneros:2013vha,Cisneros:2014fea,Cisneros2015,Cisn2016}, and find the best fit function for $v_1$ to be
 
  
  
@@ -351,15 +338,18 @@ $\kappa$  are   ratios of the baryonic gravitational potentials
       \label{eq:gravRS}
     \end{equation}
     
- The clock terms $g_{tt}$  are the time components of the  Schwarzschild metric.  They are defined in the   weak field limit  \cite{Hartle} as, 
+ This term allows the  mapping
+ between the two galaxies  one-to-one in radius, using the Schwarzschild clock terms $g_{tt}$  are  defined in the   weak field limit  \cite{Hartle} by
  
   \begin{equation}
-      g_{tt}= -( 1 - 2\Phi/ c^2).
+      g_{tt}= -( 1 - 2\Phi/ c^2), 
       \label{clocktime}
   \end{equation} 
+
+  for $\Phi$ the Newtonian gravitational potential in Eq.~\ref{eq:Newt}. 
   
 
-The best   function we find  for  $v_2$ is 
+The best fit   function we find  for  $v_2$ is 
 
 \begin{equation}
 v_{2} =  \cosh \tau, 
@@ -373,25 +363,25 @@ v_{2} =  \cosh \tau,
     e^{\tau}=   e^{(\zeta+\eta)/2}.
 \end{equation}
  
-Terms in $e^{\tau}$ are  convolutions of the curved 2-frame $e^\zeta$ (Eq.~ \ref{eq:gravRS})  with flat 2-frame $e^\eta$ where observations are made.  That this second transformation  is necessary is evidenced by the local constancy of the speed of light, ie. the equivalence principle. 
+where   $e^{\tau}$ can be seen to be  a  map  of the curved 2-frame exponential  $e^\zeta$ (Eq.~ \ref{eq:gravRS})  into  the flat 2-frame exponential $e^\eta$.  
 
-  The flat field frames  are represented by the
-Lorentz exponential  
+ Because  observations are always made in locally flat frames, as evidenced by the  constancy of the speed of light, we then transform to  
+ the  flat field-frames  where observations are made. We  define the flat-frames  by the
+Lorentz exponential  relationship as
 
 \begin{equation}
-    e^{\eta}=\frac{\omega_{l}}{\omega_o}= \sqrt{\frac{1+\beta}{1-\beta}},
+    e^{\eta}=\frac{\omega_{l}}{\omega_o}= \sqrt{\frac{1+\beta}{1-\beta}}.
     \label{eq:flat}
 \end{equation}  
      
-for $\beta = v_{lum}/c$. 
-Frequency shifts $\omega_{l}$ are those expected   
-in a flat spacetime for a relative frame velocity   $v_{lum}/c$, 
-as in Eq.~\ref{eq:modelLumA}.  
-Use of Eq.~\ref{eq:flat} asserts  that Keplerian rotation curves are     the best estimate of flatness, since dark matter is not required to  reproduce the rotation curve of our Solar System.
- 
-  Lorentz exponential terms (Eq.~\ref{eq:gravRS} and Eq.~\ref{eq:flat})
+
+for   $\beta = v_{lum}/c$   the Keplerian velocities  expected   from estimates of the luminous mass, associated with    frequency shifts $\omega_{l}$ by the flat spacetime Doppler formula Eq.~\ref{eq:modelLumA}.   
+Use of Eq.~\ref{eq:flat} asserts  that Keplerian rotation curves are  our     best estimate of flatness, since dark matter is not required to  reproduce the rotation curve of our Solar System.  
+
+
+ Lorentz exponential terms (Eq.~\ref{eq:gravRS} and Eq.~\ref{eq:flat})
   are    identified  as the  frame field relationships   by  comparison of 
-     the inertial frame Lorentz transformation in  Eq.~\ref{eq:modelLumA} with 
+     the form of the  Lorentz transformation in  Eq.~\ref{eq:modelLumA} with 
 the  hyperbolic form \cite{rindler2013essential} 
 
 
@@ -404,10 +394,10 @@ the  hyperbolic form \cite{rindler2013essential}
  
   
   Viewed as    Rindler's accelerated coordinates\cite{MTW,Wald, rindler2013essential}, 
-     $v_1$   is  timelike   and $v_2$ is spacelike. This is a heuristic construction only, though one may assume that if the RCFM proves a physical model for rotationally supported galaxies, then a fundamental derivation must exist. 
-
+     $v_1$   is  timelike   and $v_2$ is spacelike.  This is only a heuristic treatment, though one would assume if it proves physical then a fundamental derivation exists.      
+We       assume  implicitly   that the contributions to  Doppler shifted spectra from  relative frame  velocity ($v_{lum}$) and from relative curvature can be  separated   roughly as in Eq.~\ref{eq:zonte1} \cite{Jack,Cisn}.  
+  
  
-    
  
 %%%%%%
 %%%%%%%
@@ -417,37 +407,33 @@ the  hyperbolic form \cite{rindler2013essential}
 %%%%%%%  
 \subsection{Synchronizing the gravitational potentials \label{sec:gravDets}}
 
-  
-
-
+ To compare two galaxies using Lorentz-type transformations, we want  to use the fact  that locally all frames are inertial, and so special relativity applies locally. To compare galaxies one-to-one in radius we note that in the tetrad formalism  `` when going from
+one local inertial frame at a given point to another at the same point, the fields transform
+with respect to a Lorentz transformation ''\cite{jetzer}. This implies that we can map galaxies one-to-one in radius if we can compare them inertially. 
+  Wolfgang Rindler's said that      ``the center of each galaxy provides a basic local standard of nonacceleration ... so then can be treated like a local inertial frame relative to its own center.''\cite{rindler2013essential}.
+ And so, we  compare galaxies using Lorentz-type transformations by first synchronizing their centers so they can be compared inertially. 
  
-The RCFM  terms in  $v_1$ and $v_2$ are parametrized with ratios of  the    Schwarzschild gravitational clock terms. These come from the gravitational redshift formula
+ 
+ 
+To synchronize galaxy centers, we look at the      Schwarzschild  gravitational redshift formula
 
 \begin{equation}
        \frac{\omega_1}{\omega_2}  =\sqrt{\frac{g_{tt}|_{P2}}{g_{tt}|_{P1}}} =\sqrt{\frac{|\xi^t\xi_{t}|_{P2}}{|\xi^t\xi_{t}|_{P1}}},
       \label{eq:grav}
     \end{equation} 
     
-which    gives the change in  photon energy  from point $P1$ to $P2$ in a single, simply connected gravitational   manifold mapped with a timelike Killing field $\xi^t$ \cite{Wald}.    Eq.~\ref{eq:grav} is derived from the conservation properties of the Killing vector field.  The norm of the timelike Killing field in a Schwarzschild spacetime is parametrized with the time metric coefficients as $|\xi^t\xi_{t}|=\sqrt{g_{tt}}$, where $g_{tt}$    is  parametrized with the Newtonian gravitational potentials as per
-    Eq.~\ref{clocktime}. 
+which    gives the change in  photon energy  from point $P1$ to $P2$ in a \emph{single}, simply connected gravitational   manifold. 
+Such a manifold is  covered with a timelike Killing field $\xi^t$ \cite{Wald}, and   
+Eq.~\ref{eq:grav} is derived from the conservation properties of the Killing vector field. 
+ These gravitational clock terms $g_{tt}$ are related to the  norm of the Killing field in a Schwarzschild spacetime is   $|\xi^t\xi_{t}|=\sqrt{g_{tt}}$, and terms in    $g_{tt}$
+    Eq.~\ref{clocktime} are in turn parametrized by the Newtonian gravitational potential $\Phi$ as in Eq.~  \ref{eq:Newt}.
 
 
- The equivalence principle requires that locally all frames are inertial, and so special relativity applies.  ``Thus, when going from
-one local inertial frame at a given point to another at the same point, the fields transform
-with respect to a Lorentz transformation ''\cite{jetzer}(tetrad formalism). We aim to map points one-to-one in radius between two distinct galaxy manifolds with such Lorentz-type transformations. 
 
-To extend  Eq.~\ref{eq:grav} to  relate two distinct manifolds at the same radii,    our first step is to make galaxies inertial frames.   We consider  Wolfgang Rindler's statement that        ``the center of each galaxy provides a basic local standard of nonacceleration ... so then can be treated like a local inertial frame relative to its own center.''\cite{rindler2013essential}.
-  And so,   to make galaxies inertial frames with respect to one another, we   synchronize their centers. 
-    
-    
-  
-  Usually galaxy centers are not synchronized,  as gravitational potentials of galaxies   are compared from the   large $r$ limit, where all  gravitational potentials are assumed  to go to zero. This boundary condition is set  to ensure a  globally  flat embedding space,  where energy goes to zero at infinity. 
-In practice, this amounts to integrations   from zero potential at  the large $r$ limit,  into a negative maxima at the smallest $r$,  
-  as in Eq.~  \ref{eq:Newt}.  
-  However,  at the present time,  observations of  the local environments of galaxies show highly complex streamlines \cite{Pomarede:2020pme,Hoffman:2017ako} and not flat asymptotic spacetime. 
-
-  
- We drop the constraint of a flat embedding space as nonphysical, and  instead compare all    potentials    from galactic centers at $r\approx 0$, by integrating the gravitational potentials from small $r$ to the large $r$ limit of the data. This places the zero of the potential for the two galaxies at a  place where physically they must read the same clock time  at the event horizon where  $g_{tt} \to 0$.  Reversing the usual integration order 
+ Usually  gravitational potentials of galaxies   are summed from the   large $r$ limit, where all  gravitational potentials are assumed  to be zero, in to the small $r$ limit where the potential reaches a negative maxima. This summation convention is set  to ensure a  globally  flat embedding space,  where energy goes to zero at infinity. 
+  However,   since  the local environments of galaxies show highly complex streamlines  and non-flat asymptotic spacetimes \cite{Pomarede:2020pme,Hoffman:2017ako}, we drop this convention in favor of comparing galaxy potentials from the place where all clocks read the same zero, at the event horizon. 
+ Since the event horizon, on the order of rotation curve observations, is essentially the $r\approx 0$ limit, we will assume that this reversal of the integration convention will synchronize galaxy centers and create comparable frames. 
+  Reversing the usual integration order 
  
   \begin{equation}
      \Phi  =    \int_{inner}^{outer} \vec{F_r}\cdot\vec{dr}, 
@@ -455,9 +441,7 @@ In practice, this amounts to integrations   from zero potential at  the large $r
       \end{equation}
       
 for $F_r = v^2/r$ the force per unit mass, produces gravitational 
-potentials  which are synchronized at their rotation centers, and hence Killing fields which can be compared inertially. 
-In this way, we extend the use of Eq.~\ref{eq:grav}  to relate two distinct manifolds at the same radial points $P1$ and $P2$.  
- Reversing the integration order    in this way produces potentials which still obey Poisson's equation Eq.~\ref{whatsgood} and the central force law Eq.~\ref{zoochance1}, though energy conservation must be reclaimed on scales significantly larger than individual galaxies.
+potentials  which  still obey Poisson's equation Eq.~\ref{whatsgood} and the central force law Eq.~\ref{zoochance1}, though energy conservation must be reclaimed on scales significantly larger than individual galaxies.
 
  
 \subsection{  Geometry Considerations  }\label{GeomSphere}
@@ -465,14 +449,14 @@ In this way, we extend the use of Eq.~\ref{eq:grav}  to relate two distinct mani
    Population synthesis models commonly assume spherical symmetry for the 
   stellar bulge, gas halo, but   axial symmetry for    the stellar disk \cite{1954AJ.....59..273S,Freeman}.
  However, it is a common calculational  tool to use spherical symmetry for the entire integrated potential of the luminous mass distribution  \cite{2022A&A...664A..40M,PhysRevD.70.083509}, because numerical integration of the thin disk is  computationally intensive,  requires assumptions of  boundary conditions,   relevant physical scales,  etc., and therefore adds extra free parameters to the problem \cite{2011A&A...531A..36H}.  
- We   use the spherical approximation   for the above reason and also,   the simplest metric for this situation is  
- Schwarzschild. We have previously tested use of the Kerr metric in this problem, and the   differences from what is stated in this paper are below the   observational limits \cite{Cisn}. 
+ We   use the spherical approximation   for the above reason, assumming   the simplest metric for this situation  is 
+ Schwarzschild. We have previously tested  the Kerr metric in this problem, and found as expected  that the   differences from what is stated in this paper are below the   observational limits \cite{Cisn}. 
  
 Gravitational potentials calculated for  a spherically symmetric  geometry   
-  merge to those calculated for an exponential disk  at lengths greater than one-third of the exponential scale-length of the disk $R_e$, ie.  $r> R_e/3$\cite{Chatterjee}. This is the region  where dark matter effects becomes important \cite{1985ApJAlbada}, thus we conclude that this simplying assumption is justified for proof of concept. 
+  merge to those calculated for an exponential disk  at lengths greater than one-third of the exponential scale-length of the disk $R_e$, ie.  $r> R_e/3$\cite{Chatterjee}. This is the region  where dark matter effects becomes important \cite{1985ApJAlbada}, so this simplifying assumption is justified for proof of concept. 
 %ASK STACY:   \textcolor{purple}{AR: why divide by two?}   {\color{teal} YO:  this interpretation:  the mass in the inner $1/3$ of the stellar disk is  where  rotation curve fits   set the mass-to-light ratios.  }  
 However,  in the inner region of a galaxy $r< R_e/3$,  the spherical assumption   
-    overestimates the potential of a thin disk by a factor of $\approx  2$, see Fig.~\ref{fig:my_geom}, which may impact the rather high mass-to-light ratio results from RCFM fits as presented here. 
+    overestimates the potential of a thin disk by a factor of $\approx  2$, see Fig.~\ref{fig:my_geom}. The impact of which can be seen in the     mass-to-light ratio results for the stellar disks from RCFM fits as presented here. 
  
   
   \begin{figure}
@@ -590,13 +574,12 @@ Xue-Sofue
      
   \end{table*}
   
-%  \begin{figure}
- %   \centering
-  %  \includegraphics[width=\linewidth]{ }
-  %  \caption{[MAKE:    Milky Way graphs,  Lum
-  %   Xue-Sofue and McGaugh \cite{sofue2009unified}, \cite{McGaugh_2019} }
-%    \label{fig:mwSofuevMcGaugh}
-%\end{figure}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{figures/MW_Data.png}
+ \caption{[  Milky Way graphs  \cite{sofue2009unified}, \cite{McGaugh_2019} }
+   \label{fig:mwSofuevMcGaugh}
+\end{figure}
 
 
 %Sofue: We included the circular velocities from an SDSS blue stars analysis by Xue et al. (2008; their model 1) by correcting for a systematic difference in the veloc-ities of about 20 km s1, due to our V0 = 200 km s1 instead of their 220 km s1.
@@ -986,33 +969,36 @@ RCFM fits are to the same rotation curve data from   \cite{Frat}, and  use the b
 \end{equation}
  
  for  $L_{total}$    the  total luminosity of the galaxy as measured  at a wavelength of $3.6 \mu m$,  assuming a solar
-absolute magnitude of 3.24 at $3.6 \mu m$ \cite{oh2008high}, and the effective radius $R_{eff}$    the length encompassing half of the total luminosity \cite{2016Lelli}. 
+absolute magnitude of 3.24 at $3.6 \mu m$ \cite{oh2008high}   in units of $10^9$ solar  $L_\odot$, and the effective radius $R_{eff}$    the length encompassing half of the total luminosity \cite{2016Lelli} in units of kiloparsecs. 
  The resulting distribution    (Fig.~\ref{alpha2}) is  well fitted by the function 
  
     
 \begin{equation}
     \alpha =  
-    53.8 (L_{total}/R_{eff})^{-1.06}
+    51.5 (L_{total}/R_{eff})^{-1.03}
        \label{FreeParamFix}
 \end{equation}
 
-at a confidence level of $83\%$.
-%{\color{blue}(UPDATED From Master RCFM 2.8.23)}
+at an $R = .81\%$.
+%The negative exponent suggests that the correlation may be with a ratio of the same quantity ($L_T/R_{eff}$) for the Milky Way, in which case the Milky Way's value is $45$ish, dimensionless and no prefactor. It's exact. 
+%Ask Stacy- above.
+%{\color{blue}(UPDATED From Comparison Sheet, and asked Daniel Lopez make graph again(next figure) RCFM 5.29.23)}
   
- \begin{figure}
-%\scalebox{0.5}%
-\includegraphics[width=\linewidth]{figures/alphavL_Reff2_8_23.png} 
-\caption{  Training Set, galaxies selected by best distance estimates,   Cepheids and Tip of the Red Giant Branch.  Variables are:   $L$ total luminosity   in units of $10^9$ solar  $L_\odot$,  and  $R_{eff}$ is the effective or half-light radius in kpc.
-For a full list of galaxies see  Table~\ref{tab:Tset}.  {\color{blue}REMAKE.  Errors not real,   use the  SPARC estimates of 20 for LUM}.  }
+ \begin{figure} 
+\includegraphics[width=\linewidth]{figures/alpha_v_L_R-eff5_29_23.png} 
+\caption{ Correlation of RCFM free parameter $\alpha$ with ratio of  $L$ total luminosity   in units of $10^9$ solar  $L_\odot$,  and  $R_{eff}$ is the effective or half-light radius in kpc.
+ This subset of the SPARC Galaxies has been selected by best distance estimates   (Cepheids and Tip of the Red Giant Branch).
+ % (Training Set) 
+For a full list of galaxies see  Table~\ref{tab:Tset}.  {\color{blue}REMAKE Daniel Lopez.  Errors not real,   use the  SPARC estimates of 20 for LUM??}.  }
 \label{alpha2}
 \end{figure}  
+
+
+
  
-In the  RCFM, terms in   $\kappa$, $ v_1$, and $ v_2$  in Eq.~\ref{eq:zonteLCM} 
-are composed of 
-ratios of terms for    the Milky Way with respect to  the galaxy being observed. This may mean that the free parameter in Eq.~\ref{FreeParamFix}  involves a ratio of terms in $(L_{total}/R_{eff})_{mw} $ with respect to the
- the Milky Way.
- %{\color{blue}
- %Ask Stacy: estimates of $L_{tot}$ for the MW range from 200 billion M-sol, to 20 billion - the first number makes sense for this number (the quantity for the Milky Way  $42.94 =(L_{total}/R_{eff})_{mw} $, but if it's 20, and half-light radius is around 4 or 5, then this works}. 
+ % 3,679 to 4,600 kiloparsecs. ChatGPT, halflight 2-3kpc
+ %total LUM 2.3 × 1010 L
+ % estimates of $L_{tot}$ for the MW range from 200 billion M-sol, to 20 billion - the first number makes sense for this number (the quantity for the Milky Way  $52= =(L_{total}/R_{eff})_{mw} $, but if it's 20, and half-light radius is around 4 or 5, then this works}. 
   
 
 %{\color{blue}RICH, The phrasing sounds extremely strange/confusing to me: "We might assume that alpha is a ratio of the same quantity for the Milky Way ..." What is that supposed to mean? That it's a possible higher order fitting function? \color{teal} I'm not sure if it's a higher order fitting function or if we even want to try to constrain fits using this functional interpretation, but it does make our model a zero param model. Then again, we already have at least one fewer free parameters than MOND or Dark Matter, so it maybe doesn't matter. }
@@ -1036,26 +1022,34 @@ ratios of terms for    the Milky Way with respect to  the galaxy being observed.
  \section{  Conclusions \label{sec:conclu}  }
  
 
-    At this time, there are many problems in   the concordance model of   cosmology which are attributed to dark matter \cite{2010dmp..book.....S,Tully:2014gfa,Naidu_2022}.  In
- this paper we  address only the flat-rotation curve problem, as it is  simplest. 
- In another paper,  we will address another paradox of galaxy rotation curves  called the  Tully-Fisher relation \citet{1977A&A....54..661T}. 
- The  rotation curve fitting model (RCFM) presented here  replaces dark matter with  a frame-dependent picture where excesses in Doppler shifted spectra are attributed to  relative    gravitational frames of galaxies. 
-  Upcoming large surveys of the Milky Way  can falsify this model  by  a well-determined rotation curve observation  of the Milky Way beyond  
-  our position at $\approx 8 kpc$ \cite{Ivezić_2019,2022ApJS..259...35A,2010ApJ...716....1B,de_Blok_2010}.  
-  As can be seen in Fig.~\ref{fig:mwSofue}, 
-the rotation curve data for  the Milky Way  is currently ambiguous  past  $8$kpc. 
+    At this time, there are many scales in   the concordance   cosmology which include  dark matter \cite{2010dmp..book.....S,Tully:2014gfa,Naidu_2022}. 
+    In
+ this paper we  address only one,  the flat-rotation curve problem of spiral galaxies. 
+ We reinterpret this problem at the level of the data, as one of excesses in Doppler shifted spectra
+  at large radii in the galactic disk due to relative frame effects. 
+   This framing places primary importance on  the role of the Milky Way on our observations,   and compactly explains why the  Milky Way sits roughly at the  inflection  point in  the Universal Rotation Curve spectrum of 1,100 galaxies (CITE Persic et al\cite{Persic}).
+   We  
+    replace    dark matter in the standard rotation curve formula with Lorentzian field-frame transformations between slightly curved gravitational  frames, one-to-one in radius. 
+    Field-frames are defined by Schwarzschild clock terms in the weak field limit $g_{tt}(r)=-(1-2\Phi)$, for $\Phi$ the Newtonian gravitational potential due to baryons.
+    
+  This alternative rotation curve fitting model (RCFM)   reproduces the fitting successes of MOND and dark matter models on as  sample of   175  well studied galaxy rotation curves\cite{2016Lelli}, but does not   modify classical  physics. The only input to the RCFM is the  Baryonic mass estimate from  photometry and a single  
+ free    parameter  which is  highly correlated to a ratio of photometric parameters,     luminosity and effective radius. 
+ 
+ 
+The RCFM is   falsifiable with the upcoming Large  Surveys of Space and Time  at the new Vera C. Rubin Observatory \cite{Ivezić_2019,2022ApJS..259...35A,2010ApJ...716....1B,de_Blok_2010} 
+if dark matter is found to be necessary to explain  the rotation curve of the Milky Way. 
+As can be seen in Fig.~\ref{fig:mwSofue}, 
+the rotation curve   for  the Milky Way  is currently under-determined  past around our location at $8$ kpc.  
 
-  
-The RCFM can be seen  to reproduce the fitting successes of MOND and dark matter models,   on as  sample of   175  well studied galaxies\cite{2016Lelli} presented here,      without modifying classical gravitational physics.  This is accomplished by transitioning the idea of MOND's changing acceleration scale \cite{McGaugh2016RAR,2022A&A...664A..40M} to the relativistic framing of    relative galaxy curvatures. 
-Previous consideration of frame-dependency in this problem was obviated by Galilean subtraction of redshifts at the limit of the rotation curve data\cite{Wald}. We instead relate frames in distinct gravitational manifolds by synchronizing the Killing fields at the level of the potentials pinned at the galactic centers and then using Lorentz-type transforms between  galaxy frames one-to-one in radius, 
-in a field-frame formalism. 
+%  Tully-Fisher relation \citet{1977A&A....54..661T}. 
+
  
-The RCFM has the same number of free parameters as MOND, and fewer than dark matter models. The free parameters in MOND fits are the distance and acceleration scale. In the RCFM formalism, the free parameters are the choice of the Milky Way's baryon distribution and a free fitting parameter $\alpha$. 
-%ASK STACY {\color{blue}(  MOND: distance and acceleration scale )}  {\color{blue}(  DM: variously 2-4??)} {\color{blue}( RCFM: MW and $\alpha = L/r_{eff} $)}.
-We show in this work that the RCFM free    parameter  can be highly correlated to two parameters from  photometry  (total luminosity and effective radius.) 
+%love this from Boyer:  the failure involves the invalid use of nonrelativistic physics together with a relativistic radiation system.hHhHAAAAAHAHAHAHAH BADASS. 
   
  
-While there are currently many places in our concordance cosmology where dark matter is involved, we address here only this one problem of the flat-rotation curves. In a companion paper we   re-interpret the Tully-Fisher relation consistent with the framing presented here. All other dark matter problems are removed from the present discussion as requiring cosmological assumptions which are beyond the scope of the this work. 
+ 
+ 
+%ASK STACY {\color{blue}( How many free parameters for each of  MOND: distance and acceleration scale )}  {\color{blue}( and DM: variously 2-4??)} {\color{blue}( RCFM: MW and $\alpha = L/r_{eff} $)}.
  
  
   
@@ -1064,8 +1058,8 @@ While there are currently many places in our concordance cosmology where dark ma
    
 
   \section[]{Acknowledgments}
- This work is dedicated to Emmett Till. We express     gratitude to the first nations peoples on whose unceded lands this was written on, including but not limited to  the Coast Salish bands of the Puget Sound, 
- the Cheyenne, Arapaho and Southern Ute  Peoples of Colorado, and the Algonquian Peoples of Massachusetts. 
+ This work is dedicated to Emmett Till. We express     gratitude to the first nations peoples on whose unceded lands this was written, including but not limited to  the Coast Salish bands of the Puget Sound, 
+ the Cheyenne, Arapaho and Southern Ute  Peoples of Colorado, and the Algonquian speaking  Peoples of Massachusetts. 
   The authors would like to thank    V.\,P.\,  Nair,   R.\, Walterbos, S.\ McGaugh,  A.\, Klypin, K. Bender, C. Beetle,     T.\, Boyer, and M. Juric.   \\
   
  
