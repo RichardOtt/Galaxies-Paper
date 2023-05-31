@@ -65,10 +65,10 @@
 \author{Sophia Natalia Cisneros}
  \affiliation{ Department of Astronomy,  
  University of Washington}
- % \email{sophia.cisneros@du.edu}
+ % \email{ }
   \author{Richard Ott}%
  \email{rich.ott@EMAIL.com}
-\affiliation{Affiliate MIT - Ask Joe }%Tech dudes \textbackslash\textbackslash
+\affiliation{Affiliate MIT - Ask Guth }%Tech dudes \textbackslash\textbackslash
 %}
  \author{ Meagan Crowley}
 \email{ }
@@ -154,7 +154,7 @@ In another  paradox called the Universal Rotation Curve (URC)  \cite{salucci,Per
 a spectrum of   1,100  rotation curves normalized by scale-length. 
 The URC spectrum of   rotation curves   inflect about the position of the  Milky Way's (MW) presumed rotation curve;  meaning  that galaxies larger than our MW have rotation curves which   inflect down towards ``flat'', and those smaller than our Galaxy  inflect up. 
 In dark matter theories this   curious phenomenology requires fine-tuning  \cite{MCGAUGH2021220},    because it means 
-that  small galaxies smaller  are proportionally more successful at accreting dark matter halos, which contradicts   standard  gravity \cite{10.1093/mnras/stt2403}.  % where mass accretion rate are directly proportional to  initial  mass
+that  gas-dominated dwarf galaxies    are proportionally more successful at accreting dark matter halos than larger galaxies, which contradicts   standard  gravity \cite{10.1093/mnras/stt2403}.  % where mass accretion rate are directly proportional to  initial  mass
  
 
  
@@ -770,7 +770,7 @@ There are two metrics by which rotation curve fits are judged. One, the reduced 
          \includegraphics[width=.8\linewidth]{figures/ResidualHist_ExpFit_v1_sinh_v2_cosh_sparc128_newnorm_McGaugh}
          \label{fig:McGaugh residuals exponential fit}
      \end{subfigure}
-        \caption{Normalized residuals from fits assuming either XueSofue of McGaugh Milky Way models, fitted to a Gaussian or exponential function. The full-width half-maximums, means, and standard deviations are shown for the Gaussian fits. The exponential fits capture peak and tails in residuals better than the Gaussian fits, suggesting non-Gaussian behavior in the error of velocity observations.}
+        \caption{Normalized residuals from fits assuming either Xue-Sofue of McGaugh Milky Way models, fitted to a Gaussian or exponential function. The full-width half-maximums, means, and standard deviations are shown for the Gaussian fits. The exponential fits capture peak and tails in residuals better than the Gaussian fits, suggesting non-Gaussian behavior in the error of velocity observations.}
         \label{fig:residual graphs}
 \end{figure*}
 Yet, the Gaussian fits did not quite capture the full peak and heavy tails in the residuals. This suggests that there may be non-Gaussian error in the observations of galaxy velocities. To address this, the residuals were also fit to an exponential function shown in Fig.~\ref{fig:residual graphs}. The exponential function captured both the peak and the heavy-tailed behavior of the distributions more faithfully.
@@ -910,19 +910,17 @@ $13.8$ Mpc, yields  a better reduced $\chi^2 = 1.676$, and mass-to-light ratios 
 
     \subsubsection{Comparison NGC 7814 and NGC 891}
   
- These two galaxies present an interesting conundrum for both dark matter and MOND models, because they are both presented edge-on, have 'essentially identical rotation curves'', and yet,  are extreme opposites in their morphology,  with NGC 7814 being bulge dominated and NGC 891 almost entirely a disk galaxy. 
- \citet{Frat1} asks, are these rotation curves are actually that identical?
+ These two galaxies present an interesting conundrum for both dark matter and MOND models, because they are both presented edge-on, have 'essentially identical rotation curves'', and yet,  are extreme opposites in their morphology,  with NGC 7814 a bulge dominated galaxy and NGC 891 almost entirely a disk galaxy. 
+ \citet{Frat1} asks, why are these rotation curves so identical if their dark matter halos are necessarily different to accomodate the differences in the luminous mass?
  
  %% remove first point on N891_RotMod , Frat data, and Frat says is from noncircular motions
  
  
- In the context of the RCFM  paradigm, the two rotation are  very similar in magnitude,  but   differ markedly in the inflection  at large radii. 
- NGC 7814 inflects up, and  NGC 891 inflects down.
- In the RCFM paradigm, the inflection of rotation curves indicates   the total galaxy mass in baryons with respect to   the Milky Way.  
- 
- However, the RCFM  
+ In the context of the RCFM  paradigm, the two rotation are  very similar in magnitude,  but   differ markedly in the inflection  at large radii.    RCFM  
 fits to these galaxies are successful, see Figures.\ref{fitCompare7814_891}). 
-RCFM fits are to the same rotation curve data from   \cite{Frat}, and  use the baryon models reported from the SPARC database \cite{2016Lelli}. Since both of these galaxies are presented edge-on, they present a challenge to surface photometry, and so we demonstrate how the RCFM can constrain luminous mass modeling.
+ NGC 7814 inflects up, and  NGC 891 inflects down.
+ In the RCFM paradigm, the inflection  indicates   the  relative galaxy baryon mass    with respect to   the Milky Way.  
+ The RCFM fits presented here are to the  rotation curve data from   \cite{Frat} which we previously fitted in  \cite{Cisneros:2013vha,Cisneros:2014fea,Cisneros2015,Cisn2016}. On comparison of our   previous fits to the NGC 7814 rotation curve,  one can see that the RCFM underestimates the innermost rotation curve point with the current luminous mass model from   the SPARC database \cite{2016Lelli}, but   with different assumptions for  the mass  in the inner kiloparsec, the fit can be restored. NGC 7814 is very sensitive (on the order of 10s of km/sec in the kinematic phrasing of mass) to small changes in the input  baryon model, which suggests that  it is very similar to the Milky Way in curvature.
  
  
  
@@ -984,14 +982,14 @@ at an $R = .81\%$.
 %Ask Stacy- above.
 %{\color{blue}(UPDATED From Comparison Sheet, and asked Daniel Lopez make graph again(next figure) RCFM 5.29.23)}
   
- \begin{figure} 
+ \begin{figure*} 
 \includegraphics[width=\linewidth]{figures/alpha_v_L_R-eff5_29_23.png} 
 \caption{ Correlation of RCFM free parameter $\alpha$ with ratio of  $L$ total luminosity   in units of $10^9$ solar  $L_\odot$,  and  $R_{eff}$ is the effective or half-light radius in kpc.
  This subset of the SPARC Galaxies has been selected by best distance estimates   (Cepheids and Tip of the Red Giant Branch).
  % (Training Set) 
-For a full list of galaxies see  Table~\ref{tab:Tset}.  {\color{blue}REMAKE Daniel Lopez.  Errors not real,   use the  SPARC estimates of 20 for LUM??}.  }
+For a full list of galaxies see  Table~\ref{tab:Tset}.  {\color{blue}REMAKE Daniel Lopez.  Errors   SPARC estimates of 20 for LUM}.  }
 \label{alpha2}
-\end{figure}  
+\end{figure*}  
 
 
 
@@ -1270,7 +1268,7 @@ Comparison of Fit Results from MOND RAR and RCFM  } } \label{table:M2Light} \\
 & RAR $\gamma_{disk}$  
 & RAR $\gamma_{bulge}$ 
 &  RAR $\chi^2$ ave=4.22 
-&\textbf{RCFM}$\chi^2$ ave=1.8
+&\textbf{RCFM}$\chi^2$ ave=RERUN - Meagan
 &\textbf{RCFM} $\gamma_{disk}$
 &\textbf{RCFM} $\gamma_{bulge}$
 
