@@ -25,7 +25,7 @@
 %floatfix,
 ]{revtex4-1}
 \usepackage[table,xcdraw]{xcolor}
-
+\usepackage{booktabs}
 %\usepackage{xcolor}
 
 \usepackage{graphicx}% Include figure files
@@ -88,6 +88,9 @@
 \author{Shanon Rubin(Check - I think he uses a J.)}
 \author{Aaron Ashley}
 \author{Dillon Battaglia}
+\author{Maya Salwa}
+%\author{Daniel Lopez}
+
 %\affiliation{UMass Boston% with \\
 %&}%
 %
@@ -102,7 +105,8 @@
 %%%%%%
 %%%%%%%
 \begin{abstract}
- 
+One key piece of evidence for dark matter is the flat rotation curve problem: the disagreement between measured galactic rotation curves and their luminous mass.  A novel solution to this problem is presented here. A model of relativistic frame effects on Doppler shifts due to the slightly curved frames of an emitting galaxy and the Milky Way is derived. This model predicts expected observed spectra (Doppler shifts? some other term?) based only on the observed luminous matter profile and one free model parameter. It is fit to the SPARC database of galactic rotation profiles and photometry measurements. The resulting fits have an average $\chi^2_r$ of ???, competitive with current MOND and dark matter models. Implications of this model in explaining other observed phenomena related to galactic curves are discussed (Rich's note: I don't really like this last sentence, we might want to remove it or replace it).
+ \end{abstract}
  
 {\color{teal}   Github repo: Cisneros-Galaxy/RCFM     }
 
@@ -283,12 +287,80 @@ v(r)_{lum}^2 = \gamma_b v(r)_{bulge}^2 +  \gamma_d v(r)_{disk}^2 + v(r)_{gas}^2.
 Terms in mass-to-light ratios $\gamma_b$ and $\gamma_d$ are  from PSM,  for the stellar bulge and for the stellar disk      respectively. 
   Gas fractions $v_{gas}$ are calculated from different observational technique as given in  \cite{1983MNRAS.203..735C}, and do not require  mass-to-light ratios.  
   
+% 
+%%
+% 
+%%
+% 
+%%
+% 
+%%
+\section{New rotation curve fitting model (RCFM)}
+%%%%%%
+%%%%%%%
+%%%%%%
+%%%%%%%  
+%%%%%%
+%%%%%%%  
+\subsection{Synchronizing the gravitational potentials \label{sec:gravDets}}
+
+ Wolfgang Rindler makes the  statement that      ``the center of each galaxy provides a basic local standard of nonacceleration ... so then can be treated like a local inertial frame relative to its own center''\cite{rindler2013essential}.  In addition,   in the tetrad formalism,   `` when going from
+one local inertial frame at a given point to another at the same point, the fields transform
+with respect to a Lorentz transformation ''\cite{jetzer}. 
+So,  the protocol we will follow is to first make galaxies into comparable inertial frames, and then  to      Lorentz  transform   
+    between them in radius.  
+    We will then use the resulting galaxy mapping term  to replace the dark matter contribution in  the flat-rotation problem,  without dark particles or modified gravity.  
+%To compare two galaxies by a series of  Lorentz-type transformations we note that \emph{locally}  any manifold has an inertial frame structure, with associated Minkowski metric $\eta_{\alpha \beta}$. 
+
+
+
  
 
 
-\subsection{New rotation curve fitting model (RCFM)}
+To compare galaxies in the weak field limit,  we first look at the      Schwarzschild  gravitational redshift formula
 
-We reinterpret the flat-rotation curve problem not as a missing mass problem, but as a gravitational frame-dependency  due to our Milky Way.  
+\begin{equation}
+       \frac{\omega(r_1)}{\omega(r_2)}  =\sqrt{\frac{g_{tt}(r_2)|_{P2}}{g_{tt}(r_1)|_{P1}}} =\sqrt{\frac{|\xi(r_2)^t\xi(r_2)_{t}|_{P2}}{|\xi^t(r_1)\xi_{t}(r_1)|_{P1}}},
+      \label{eq:grav}
+    \end{equation} 
+    
+which is derived from conservation properties of the timelike Killing field and 
+  yields the change in  photon energy  between two  points $P1$ to $P2$,  in a \emph{single} simply connected   manifold. 
+Galaxies are  covered in  $g_{tt}(r)$,   with respect to the rotational center of the system at  
+$r=0$  \cite{Wald}. 
+ The  norm of the timelike Killing field in  a Schwarzschild spacetime is   $g_{tt}(r)=|\xi^t(r)\xi_{t}(r)|=-(1-n\Phi) $, for terms in    $\Phi$ the Newtonian gravitational potential  (Eq.~\ref{eq:Newt}). 
+ We make the assumption that to generalize this formula to connect two galaxies by Lorentz type transformations between manifolds in $g_{tt}$, we must synchronize the Killing fields by comparing them from a place where physically they are calibrated at the same physical zero. 
+ 
+
+
+ Generally we integrate  gravitational potentials of galaxies   from the   large $r$ limit where  $\Phi = 0$, in to a negative maxima at the small $r$ limit.
+  This   convention is is an implicit assumption of 
+  a  globally  flat embedding space.  
+  In a globally flat embedding space,  this convention insures      energy is conserved on the scales of individual galaxies. 
+  However, recent  observations \cite{Pomarede:2020pme,Hoffman:2017ako}  show that the external environments of galaxies are very complex,  as galaxies exist in  non-flat  spacetime flows and streamlines with sources and sinks. 
+  Assuming that one regains  energy conservation  on scales significantly larger than individual galaxies,   we   change the integration    convention  in favor of 
+   comparing galaxy potentials relative to  their centers.
+ 
+   
+ 
+   \begin{equation}
+     \Phi  =    \int_{r_{inner}}^{r_{outer}} \vec{F_r}\cdot\vec{dr}, 
+      \label{eq:Newt2}
+      \end{equation}
+
+  This is an implicit assumption that at their centers $r\approx 0$, all galaxy clocks (terms in $g_{tt}$ are set to the same zero at the event horizon.  We assume that reversing  the   integration order,   from the small $r$ limit, 
+   \emph{out} to the large $r$ limit of the data   will synchronize   galaxy Killing fields, 
+   so they can be compared inertially by Lorentz-type transformations. 
+This process produces gravitational 
+potentials  which  still   obey Poisson's equation Eq.~\ref{whatsgood} and the central force law Eq.~\ref{zoochance1}. 
+
+Computationally, 
+      this process produces positive definite gravitational potentials compared from the same zero, which are then   subtracted from $1$ in  the clock term $g_{tt}=-(1-2\Phi)$.  
+
+
+
+\subsection{heuristic picture}
+We reinterpret the flat-rotation curve problem not as a missing mass problem, but as a gravitational frame-dependency problem due to our Milky Way.  
 We   replace 
   the dark matter contribution $v^2_{dm}/r$ in the rotation curve equation  Eq.\ref{eq:zonte1},  with a
   relative frame transform term $\alpha \kappa^2 v_1 v_2$ so that the RCFM  prediction  $v(r)_{rc}$,  
@@ -399,49 +471,6 @@ We       assume  implicitly   that the contributions to  Doppler shifted spectra
   
  
  
-%%%%%%
-%%%%%%%
-%%%%%%
-%%%%%%%  
-%%%%%%
-%%%%%%%  
-\subsection{Synchronizing the gravitational potentials \label{sec:gravDets}}
-
- To compare two galaxies using Lorentz-type transformations, we want  to use the fact  that locally all frames are inertial, and so special relativity applies locally. To compare galaxies one-to-one in radius we note that in the tetrad formalism  `` when going from
-one local inertial frame at a given point to another at the same point, the fields transform
-with respect to a Lorentz transformation ''\cite{jetzer}. This implies that we can map galaxies one-to-one in radius if we can compare them inertially. 
-  Wolfgang Rindler's said that      ``the center of each galaxy provides a basic local standard of nonacceleration ... so then can be treated like a local inertial frame relative to its own center.''\cite{rindler2013essential}.
- And so, we  compare galaxies using Lorentz-type transformations by first synchronizing their centers so they can be compared inertially. 
- 
- 
- 
-To synchronize galaxy centers, we look at the      Schwarzschild  gravitational redshift formula
-
-\begin{equation}
-       \frac{\omega_1}{\omega_2}  =\sqrt{\frac{g_{tt}|_{P2}}{g_{tt}|_{P1}}} =\sqrt{\frac{|\xi^t\xi_{t}|_{P2}}{|\xi^t\xi_{t}|_{P1}}},
-      \label{eq:grav}
-    \end{equation} 
-    
-which    gives the change in  photon energy  from point $P1$ to $P2$ in a \emph{single}, simply connected gravitational   manifold. 
-Such a manifold is  covered with a timelike Killing field $\xi^t$ \cite{Wald}, and   
-Eq.~\ref{eq:grav} is derived from the conservation properties of the Killing vector field. 
- These gravitational clock terms $g_{tt}$ are related to the  norm of the Killing field in a Schwarzschild spacetime is   $|\xi^t\xi_{t}|=\sqrt{g_{tt}}$, and terms in    $g_{tt}$
-    Eq.~\ref{clocktime} are in turn parametrized by the Newtonian gravitational potential $\Phi$ as in Eq.~  \ref{eq:Newt}.
-
-
-
- Usually  gravitational potentials of galaxies   are summed from the   large $r$ limit, where all  gravitational potentials are assumed  to be zero, in to the small $r$ limit where the potential reaches a negative maxima. This summation convention is set  to ensure a  globally  flat embedding space,  where energy goes to zero at infinity. 
-  However,   since  the local environments of galaxies show highly complex streamlines  and non-flat asymptotic spacetimes \cite{Pomarede:2020pme,Hoffman:2017ako}, we drop this convention in favor of comparing galaxy potentials from the place where all clocks read the same zero, at the event horizon. 
- Since the event horizon, on the order of rotation curve observations, is essentially the $r\approx 0$ limit, we will assume that this reversal of the integration convention will synchronize galaxy centers and create comparable frames. 
-  Reversing the usual integration order 
- 
-  \begin{equation}
-     \Phi  =    \int_{inner}^{outer} \vec{F_r}\cdot\vec{dr}, 
-      \label{eq:Newt2}
-      \end{equation}
-      
-for $F_r = v^2/r$ the force per unit mass, produces gravitational 
-potentials  which  still obey Poisson's equation Eq.~\ref{whatsgood} and the central force law Eq.~\ref{zoochance1}, though energy conservation must be reclaimed on scales significantly larger than individual galaxies.
 
  
 \subsection{  Geometry Considerations  }\label{GeomSphere}
@@ -534,7 +563,7 @@ Mass-modeling of the MW is an under-constrained problem, due to     observing fr
  We test the RCFM   using two different, static MW choices; 
    a hybrid model combined from  \citet{Xue}, 
   \citet{Sofue}, \cite{sofue2009unified}, and 
-  a model from  \citet{McGaugh_2019}. The Sofue and Xue MW are derived from the same data and same model constrainst, but are combined for maximal coverage from  $[0,20]$ kpc
+  a model from  \citet{McGaugh_2019}. The Sofue and Xue MW are derived from the same data and same model constraints, but are combined for maximal coverage from  $[0,20]$ kpc
   (\citet{Sofue})   and  $[20,60]$ kpc  (\citet{Xue}). 
   
    The  two Milky Way models vary in their underlying assumptions regarding structure and gravitational behavior of the Milky Way. For example, McGaugh \cite{McGaugh_2019} assumes a galactic bar at the center and thus does not include velocity data of the inner 5 kpc of the Milky Way.  In contrast, the Xue-Sofue MW is centrally condensed, and the peak velocity is   at around $94$ parsecs, versus that of  the McGaugh MW   at  approximately  $6.55$ Kpc   \cite{McGaugh_2019}. See Table~\ref{tab:MWcompare} for more information.
@@ -577,7 +606,7 @@ Xue-Sofue
   \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{figures/MW_Data.png}
- \caption{[  Milky Way graphs  \cite{sofue2009unified}, \cite{McGaugh_2019} }
+ \caption{ Milky Way graphs  \cite{sofue2009unified}, \cite{McGaugh_2019} }
    \label{fig:mwSofuevMcGaugh}
 \end{figure}
 
@@ -983,7 +1012,7 @@ at an $R = .81\%$.
 %{\color{blue}(UPDATED From Comparison Sheet, and asked Daniel Lopez make graph again(next figure) RCFM 5.29.23)}
   
  \begin{figure*} 
-\includegraphics[width=\linewidth]{figures/alpha_v_L_R-eff5_29_23.png} 
+\includegraphics[width=\linewidth]{figures/Alpha_Correlation.png} 
 \caption{ Correlation of RCFM free parameter $\alpha$ with ratio of  $L$ total luminosity   in units of $10^9$ solar  $L_\odot$,  and  $R_{eff}$ is the effective or half-light radius in kpc.
  This subset of the SPARC Galaxies has been selected by best distance estimates   (Cepheids and Tip of the Red Giant Branch).
  % (Training Set) 
@@ -1296,7 +1325,7 @@ Comparison of Fit Results from MOND RAR and RCFM  } } \label{table:M2Light} \\
 \endlastfoot
 
 %% Body of table
-CamB                 & 7.88                      & 0.34 ± 0.08           & …                      & 5.758                                                        & 0.145                                                          & 1.43E-05                                                              & …                                                             \\
+CamB                 & 7.88                      & 0.34 $\pm$ 0.08           & …                      & 5.758                                                        & 0.145                                                          & 1.43E-05                                                              & …                                                             \\
 \rowcolor[HTML]{F3F3F3} 
 D512-2               & 8.51                      & 0.48 ± 0.12           & …                      & 0.37                                                         & 0.052                                                       & 1.48                                                           & …                                                             \\
 \rowcolor[HTML]{F3F3F3} 
